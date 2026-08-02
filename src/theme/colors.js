@@ -5,18 +5,18 @@
 // reserved ONLY for completion/success states. No decorative gradients.
 
 export const colors = {
-  // Surfaces
-  bg: '#0C0E13',        // page background — near-black ink
-  bgAlt: '#0F1218',      // secondary background (exam mode)
-  surface: '#151922',    // card surface
-  surfaceRaised: '#1B2029', // hovered / raised card
-  border: '#262C38',
-  borderStrong: '#38404F',
+  // Surfaces — lifted slightly off pure ink so cards separate from the page
+  bg: '#10131A',        // page background — near-black ink
+  bgAlt: '#141821',      // secondary background (exam mode)
+  surface: '#1A1F2A',    // card surface
+  surfaceRaised: '#212734', // hovered / raised card
+  border: '#2E3546',
+  borderStrong: '#454E63',
 
-  // Text
-  text: '#E9EBEF',
-  textDim: '#9BA3B4',
-  textFaint: '#5C6473',
+  // Text — brightened for readability against the dark surfaces
+  text: '#F1F3F7',
+  textDim: '#B7BFCE',
+  textFaint: '#828BA0',
 
   // Signature accent — "signal violet", used for interactive/primary actions
   accent: '#7C6CF2',

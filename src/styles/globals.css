@@ -1,15 +1,15 @@
 @import './../theme/typography.css';
 
 :root {
-  --bg: #0C0E13;
-  --bg-alt: #0F1218;
-  --surface: #151922;
-  --surface-raised: #1B2029;
-  --border: #262C38;
-  --border-strong: #38404F;
-  --text: #E9EBEF;
-  --text-dim: #9BA3B4;
-  --text-faint: #5C6473;
+  --bg: #10131A;
+  --bg-alt: #141821;
+  --surface: #1A1F2A;
+  --surface-raised: #212734;
+  --border: #2E3546;
+  --border-strong: #454E63;
+  --text: #F1F3F7;
+  --text-dim: #B7BFCE;
+  --text-faint: #828BA0;
   --accent: #7C6CF2;
   --accent-dim: #5A4DBF;
   --accent-soft: rgba(124, 108, 242, 0.14);
@@ -34,7 +34,8 @@ html, body, #root {
 body {
   margin: 0;
   background:
-    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(124,108,242,0.10), transparent 60%),
+    radial-gradient(ellipse 900px 520px at 50% -10%, rgba(124,108,242,0.16), transparent 62%),
+    radial-gradient(ellipse 700px 420px at 100% 15%, rgba(47,213,184,0.07), transparent 60%),
     var(--bg);
   color: var(--text);
   font-family: var(--font-body);
@@ -240,11 +241,17 @@ button { font-family: inherit; }
   border-color: var(--border-strong);
   background: var(--surface-raised);
 }
+/* Locked cards stay fully readable — desaturated via a dimmer icon/border only,
+   never by fading the text itself (that's what made titles unreadable before) */
 .roadmap-card.is-locked {
-  opacity: 0.55;
   cursor: not-allowed;
+  background: var(--bg-alt);
+  border-left-color: var(--border-strong) !important;
 }
+.roadmap-card.is-locked .roadmap-card-title { color: var(--text-dim); }
+.roadmap-card.is-locked svg { opacity: 0.45; }
 .roadmap-card-title {
+  color: var(--text);
   font-weight: 600;
   font-size: 0.98rem;
   margin: 0 0 2px;
@@ -262,8 +269,90 @@ button { font-family: inherit; }
   padding: 4px 8px;
   border-radius: 20px;
   border: 1px solid var(--border-strong);
+  background: var(--surface-raised);
   color: var(--text-dim);
   white-space: nowrap;
+}
+
+/* ---------- View toggle (list / grid) ---------- */
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.view-toggle button {
+  background: var(--surface);
+  border: none;
+  color: var(--text-faint);
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background .15s ease, color .15s ease;
+}
+.view-toggle button:not(:last-child) { border-right: 1px solid var(--border); }
+.view-toggle button.active { background: var(--accent-soft); color: var(--accent); }
+.view-toggle button:hover:not(.active) { color: var(--text); }
+
+/* ---------- Grid view ---------- */
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  padding: 20px 0 40px;
+}
+.grid-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--tint, var(--accent));
+  border-radius: var(--radius-md);
+  padding: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 150px;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.grid-card:hover:not(.is-locked) {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  background: var(--surface-raised);
+}
+.grid-card.is-locked {
+  cursor: not-allowed;
+  background: var(--bg-alt);
+  border-top-color: var(--border-strong) !important;
+}
+.grid-card.is-locked .grid-card-title { color: var(--text-dim); }
+.grid-card.is-locked svg { opacity: 0.45; }
+.grid-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+.grid-card-title {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.96rem;
+  margin: 0;
+  line-height: 1.35;
+  flex: 1;
+}
+.grid-card-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: auto;
 }
 .badge-api { color: var(--caution); border-color: var(--caution); background: var(--caution-soft); }
 .badge-exam { color: var(--danger); border-color: var(--danger); background: var(--danger-soft); }
