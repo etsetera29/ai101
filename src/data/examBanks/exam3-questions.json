@@ -1,0 +1,962 @@
+[
+  {
+    "id": "exam3-001",
+    "topic": "AI in the Philippine Context",
+    "question": "Why is understanding the local Philippine AI landscape valuable for IT students?",
+    "options": [
+      "It has no relevance to their future careers",
+      "It helps them see how global AI trends are being applied and adapted within their own national context",
+      "Local AI development does not exist",
+      "Only foreign AI development matters"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-002",
+    "topic": "AI in the Philippine Context",
+    "question": "Government initiatives supporting AI development in the Philippines generally aim to:",
+    "options": [
+      "Ban AI research entirely",
+      "Promote digital transformation, innovation, and responsible AI adoption across sectors",
+      "Restrict internet access nationwide",
+      "Eliminate the IT industry"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-003",
+    "topic": "AI in the Philippine Context",
+    "question": "Local AI startups in the Philippines are most commonly found addressing challenges in areas such as:",
+    "options": [
+      "Fintech, agriculture, healthcare, and customer service",
+      "Only outer space exploration",
+      "Deep-sea mining exclusively",
+      "Nuclear power plant design"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-004",
+    "topic": "AI in the Philippine Context",
+    "question": "Educational initiatives promoting AI literacy in Philippine schools often focus on:",
+    "options": [
+      "Removing computer science from curricula entirely",
+      "Integrating AI and digital literacy topics into IT and computing curricula",
+      "Banning technology use in classrooms",
+      "Focusing solely on non-digital skills"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-005",
+    "topic": "AI in the Philippine Context",
+    "question": "Why might government agencies partner with universities on AI research initiatives?",
+    "options": [
+      "To combine academic research capacity with public-sector resources and policy goals",
+      "Universities are legally barred from AI research",
+      "Government agencies have no interest in technology",
+      "Such partnerships are prohibited by law"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-006",
+    "topic": "AI in the Philippine Context",
+    "question": "A common challenge for AI adoption in developing economies like the Philippines includes:",
+    "options": [
+      "Limited access to large datasets, infrastructure, and specialized talent in some areas",
+      "An oversupply of AI infrastructure everywhere",
+      "No demand for AI solutions at all",
+      "AI is fully banned nationwide"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-007",
+    "topic": "AI in the Philippine Context",
+    "question": "Which sector in the Philippines has seen notable interest in applying AI, given the country's strong BPO industry?",
+    "options": [
+      "Agriculture only",
+      "Business process outsourcing and customer service",
+      "Deep-sea exploration",
+      "Aerospace manufacturing"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-008",
+    "topic": "AI in the Philippine Context",
+    "question": "Why is 'digital transformation' a common goal mentioned in Philippine government technology initiatives?",
+    "options": [
+      "To modernize public services and improve efficiency using technologies like AI",
+      "To eliminate all government jobs",
+      "To ban the use of computers in government offices",
+      "Digital transformation is unrelated to government goals"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-009",
+    "topic": "AI in the Philippine Context",
+    "question": "Local AI startups often face which common challenge when scaling their solutions?",
+    "options": [
+      "Securing funding, technical talent, and market access",
+      "An excess of available AI engineers with no shortage",
+      "Government mandates requiring failure",
+      "A complete absence of any competition"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-010",
+    "topic": "AI in the Philippine Context",
+    "question": "Why might AI-powered agricultural tools be particularly relevant in the Philippine context?",
+    "options": [
+      "Agriculture is a significant economic sector, and AI can help with crop monitoring, yield prediction, and resource management",
+      "The Philippines has no agricultural sector",
+      "AI cannot be applied to agriculture",
+      "Agriculture is unrelated to technology"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-011",
+    "topic": "AI in the Philippine Context",
+    "question": "Educational initiatives that introduce AI and prompt engineering to students aim primarily to:",
+    "options": [
+      "Prepare students with relevant skills for an increasingly AI-integrated workforce",
+      "Discourage students from pursuing technology careers",
+      "Replace all traditional subjects with AI topics only",
+      "Have no connection to future employment"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-012",
+    "topic": "AI in the Philippine Context",
+    "question": "Which best describes the role of government regulation in guiding local AI development?",
+    "options": [
+      "Establishing frameworks and policies that aim to balance innovation with ethical and safety considerations",
+      "Regulation has no role in technology development",
+      "Regulation always halts all technological progress completely",
+      "AI development requires no policy guidance whatsoever"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-013",
+    "topic": "AI in the Philippine Context",
+    "question": "Why is talent development considered important for the Philippine tech industry?",
+    "options": [
+      "It has no impact on industry growth",
+      "A skilled workforce supports innovation, competitiveness, and the growth of local tech companies",
+      "Talent development only matters in other countries",
+      "The Philippines already has an oversupply of AI talent"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-014",
+    "topic": "AI in the Philippine Context",
+    "question": "Which of the following best reflects a realistic use of AI in Philippine public services?",
+    "options": [
+      "AI-assisted systems helping process and organize large volumes of citizen requests or data",
+      "AI completely replacing all government employees overnight",
+      "AI being legally banned from any government use",
+      "Public services having no interaction with technology at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-015",
+    "topic": "AI in the Philippine Context",
+    "question": "Why do partnerships between local startups and international tech companies often benefit AI development in emerging markets?",
+    "options": [
+      "They can provide access to funding, technology, and expertise not always locally available",
+      "Such partnerships are illegal",
+      "International companies never engage with local markets",
+      "Partnerships have no effect on technology growth"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-016",
+    "topic": "AI in the Philippine Context",
+    "question": "A key motivation behind promoting AI education in Philippine colleges is to:",
+    "options": [
+      "Help students remain irrelevant to the modern job market",
+      "Equip graduates with skills that align with growing demand for AI-literate professionals",
+      "Reduce the number of IT graduates",
+      "Discourage innovation"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-017",
+    "topic": "AI in the Philippine Context",
+    "question": "Which best explains why 'responsible AI adoption' is often emphasized in national tech strategies?",
+    "options": [
+      "To help ensure AI is deployed in ways that consider ethics, safety, and societal impact",
+      "Because AI adoption requires no oversight",
+      "Because responsibility is irrelevant to technology policy",
+      "To completely block all AI use nationwide"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-018",
+    "topic": "AI in the Philippine Context",
+    "question": "How can AI-driven analytics support disaster response efforts in a disaster-prone country like the Philippines?",
+    "options": [
+      "By helping analyze data to predict risks and coordinate faster, more informed emergency response",
+      "AI cannot be applied to disaster response",
+      "Disaster response has no data component",
+      "Analytics tools are banned during emergencies"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-019",
+    "topic": "AI in the Philippine Context",
+    "question": "Why might local language and dialect support be an important consideration for AI tools developed for Filipino users?",
+    "options": [
+      "To make AI tools more accessible and accurate for the local population who may not primarily use English",
+      "Local languages are irrelevant to AI tool design",
+      "All AI tools automatically support every language perfectly by default",
+      "The Philippines has only one spoken language"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-020",
+    "topic": "AI in the Philippine Context",
+    "question": "What role can incubators and accelerator programs play in supporting local AI startups?",
+    "options": [
+      "Providing mentorship, funding connections, and resources to help early-stage startups grow",
+      "They exist solely to shut down new startups",
+      "They have no relevance to technology entrepreneurship",
+      "They are illegal in most countries"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-021",
+    "topic": "AI in the Philippine Context",
+    "question": "Why is it valuable for students to research real local AI startups as part of a course project?",
+    "options": [
+      "It connects theoretical AI concepts to tangible, local real-world applications and challenges",
+      "Local startups have no educational value",
+      "Research projects should avoid real-world examples",
+      "It discourages critical thinking"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-022",
+    "topic": "AI in the Philippine Context",
+    "question": "Which best describes a realistic challenge that Philippine AI initiatives might face regarding infrastructure?",
+    "options": [
+      "Uneven internet connectivity and computing resources across different regions",
+      "An excess of computing power everywhere with no gaps",
+      "No infrastructure challenges exist anywhere in the country",
+      "Infrastructure is entirely irrelevant to AI adoption"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-023",
+    "topic": "AI in the Philippine Context",
+    "question": "Why might government-funded AI research grants be offered to local universities?",
+    "options": [
+      "To encourage innovation and build local research capacity in emerging technologies",
+      "Because research grants are prohibited by law",
+      "Universities are barred from receiving government funding",
+      "Grants have no connection to national technology goals"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-024",
+    "topic": "AI in the Philippine Context",
+    "question": "What is one potential benefit of AI-powered tools for Philippine small and medium enterprises (SMEs)?",
+    "options": [
+      "Helping automate routine tasks like customer inquiries or inventory tracking to improve efficiency",
+      "SMEs cannot use any form of technology",
+      "AI tools are exclusively for large multinational corporations",
+      "AI provides no operational benefits to smaller businesses"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-025",
+    "topic": "AI in the Philippine Context",
+    "question": "Why is collaboration between the academe, government, and private sector often highlighted as important for national AI progress?",
+    "options": [
+      "Combining research, policy, and industry resources can accelerate innovation and practical application",
+      "These sectors should never interact",
+      "Collaboration slows down all technological progress",
+      "Only one sector should be involved in AI development"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-026",
+    "topic": "AI in the Philippine Context",
+    "question": "Which best describes the relationship between AI adoption and job market changes in the Philippines?",
+    "options": [
+      "AI adoption may shift the types of skills in demand, creating both new opportunities and displacement in some roles",
+      "AI adoption has zero effect on the job market",
+      "AI eliminates the need for any human workers overnight",
+      "The job market is entirely unaffected by any form of technology"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-027",
+    "topic": "AI in the Philippine Context",
+    "question": "Why is critical awareness of both the opportunities and limitations of local AI initiatives important for students?",
+    "options": [
+      "It helps them form a balanced, informed perspective rather than assuming AI is either entirely beneficial or entirely harmful",
+      "Critical awareness is unnecessary for understanding technology policy",
+      "Students should only focus on limitations",
+      "Students should only focus on benefits"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-028",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Recommendation systems, like those used by streaming platforms, work by:",
+    "options": [
+      "Randomly selecting content with no pattern",
+      "Analyzing user behavior and preferences to suggest relevant content",
+      "Physically scanning a user's living room",
+      "Ignoring all user data entirely"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-029",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Smart assistants like Siri, Alexa, or Google Assistant primarily rely on:",
+    "options": [
+      "Natural Language Processing and speech recognition",
+      "Only robotic hardware with no software",
+      "Manual human operators behind the scenes",
+      "A fixed script with no AI involved"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-030",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Personalized learning tools use AI to:",
+    "options": [
+      "Adapt content, pacing, or difficulty to an individual learner's needs and progress",
+      "Provide the exact same lesson to every student regardless of ability",
+      "Eliminate the need for teachers entirely",
+      "Randomly assign grades with no basis"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-031",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which of the following is a career path directly related to prompt engineering skills?",
+    "options": [
+      "AI content strategist or conversational AI designer",
+      "Plumber",
+      "Civil construction worker",
+      "Agricultural field laborer"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-032",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why are AI literacy skills increasingly valued across many industries, not just tech?",
+    "options": [
+      "AI tools are being integrated into workflows across sectors like marketing, healthcare, and finance",
+      "AI literacy has no relevance outside of computer science",
+      "Only software engineers will ever use AI tools",
+      "AI literacy skills are becoming obsolete"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-033",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "A recommendation engine suggesting products based on a shopper's past purchases is an application of AI in:",
+    "options": [
+      "E-commerce and retail",
+      "Deep space exploration",
+      "Nuclear physics",
+      "Structural engineering"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-034",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which best describes how AI influences daily life through navigation apps?",
+    "options": [
+      "By analyzing real-time traffic data to suggest optimal routes",
+      "By physically driving the car with no user input",
+      "By replacing the need for roads entirely",
+      "By having no connection to AI technology"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-035",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Careers combining AI knowledge with domain expertise are becoming more common because:",
+    "options": [
+      "AI tools are increasingly applied within specialized fields, requiring professionals who understand both",
+      "AI has no application in specialized professional fields",
+      "Domain expertise is no longer necessary in any field",
+      "AI eliminates the need for specialized knowledge entirely"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-036",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which skill is commonly cited as valuable for future AI-related careers, beyond technical coding ability?",
+    "options": [
+      "Critical thinking and effective communication",
+      "Avoiding all forms of technology",
+      "Memorizing entire programming manuals verbatim",
+      "Physical strength"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-037",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Smart home devices that adjust lighting or temperature based on user habits are an example of AI applied to:",
+    "options": [
+      "Home automation and personalization",
+      "Space travel",
+      "Agricultural irrigation exclusively",
+      "Legal document drafting"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-038",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why might 'prompt engineer' or 'AI interaction designer' be considered an emerging career role?",
+    "options": [
+      "As generative AI tools become widespread, there's growing demand for people skilled at effectively directing and refining AI outputs",
+      "These roles do not exist and never will",
+      "This role requires no understanding of AI at all",
+      "It is identical to a construction job"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-039",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Personalized learning platforms that adjust exercises based on a student's past performance rely on:",
+    "options": [
+      "AI algorithms analyzing individual learning patterns and progress data",
+      "A single fixed worksheet for all students",
+      "Manual grading with no software involvement",
+      "Random assignment with no data analysis"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-040",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which of these best illustrates AI's role in personal productivity tools?",
+    "options": [
+      "An AI assistant helping schedule meetings or draft emails based on a user's preferences",
+      "A tool that has no connection to daily tasks",
+      "A purely mechanical calculator",
+      "A printed paper planner"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-041",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why is adaptability considered important for professionals entering AI-related career fields?",
+    "options": [
+      "AI tools and best practices evolve quickly, requiring ongoing learning",
+      "AI technology never changes once developed",
+      "Adaptability is irrelevant to any career",
+      "AI-related fields require no continued learning"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-042",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "A streaming platform's 'recommended for you' section is generated primarily through:",
+    "options": [
+      "Machine learning analysis of viewing history and similar users' preferences",
+      "A staff member manually curating each user's homepage individually",
+      "Completely random selection",
+      "Following a printed catalog only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-043",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which best describes a realistic future career opportunity related to AI ethics?",
+    "options": [
+      "An AI ethics consultant helping organizations evaluate fairness and responsible use of AI systems",
+      "A role that focuses solely on hardware repair",
+      "A career unrelated to any technology field",
+      "A position that requires no understanding of AI's societal impact"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-044",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why might businesses seek employees who understand how to effectively use generative AI tools?",
+    "options": [
+      "Such skills can improve productivity, content creation, and problem-solving within the organization",
+      "Businesses generally avoid any use of AI tools",
+      "These skills have no workplace relevance",
+      "Only large corporations can benefit from AI skills"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-045",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Voice-activated smart assistants improve over time primarily because:",
+    "options": [
+      "They learn from user interactions and are updated with improved language models",
+      "They are replaced with entirely new hardware every day",
+      "They cannot improve or learn in any way",
+      "They rely solely on unchanging, fixed scripts"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-046",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which best illustrates AI's impact on personalized healthcare recommendations?",
+    "options": [
+      "Apps that suggest fitness or wellness routines based on an individual's tracked health data",
+      "A doctor prescribing medication with no reference to patient data",
+      "AI having no application in health-related products",
+      "A random suggestion generator with no data basis"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-047",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why do many career guidance resources now recommend gaining basic AI literacy regardless of one's intended profession?",
+    "options": [
+      "AI tools are becoming integrated across many professions, making basic familiarity broadly useful",
+      "AI literacy is only useful for computer scientists",
+      "Career guidance resources generally discourage learning about AI",
+      "AI has no bearing on modern job markets"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-048",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which is an example of AI being used to personalize digital advertising?",
+    "options": [
+      "Ads tailored to a user's browsing history and inferred interests",
+      "The exact same ad shown to every user with no personalization",
+      "Ads generated with no reference to any user data",
+      "Advertising that has no connection to AI or data analysis"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-049",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why is understanding 'human oversight' relevant even in AI-driven career fields?",
+    "options": [
+      "Professionals need to know when and how to review, verify, or correct AI-generated outputs",
+      "Human oversight is unnecessary once AI is deployed",
+      "AI-driven fields require no professional judgment",
+      "Oversight only matters in non-technology careers"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-050",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "A key advantage of AI-personalized learning tools in education is that they can:",
+    "options": [
+      "Help identify a student's specific knowledge gaps and target practice accordingly",
+      "Guarantee every student learns at an identical pace with no differences",
+      "Replace the value of teacher feedback entirely",
+      "Provide no measurable benefit over generic materials"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-051",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which of these best represents a 'soft skill' that complements technical AI knowledge in the workplace?",
+    "options": [
+      "Clear communication when explaining AI-driven insights to non-technical colleagues",
+      "Memorizing programming syntax exactly",
+      "Physical endurance",
+      "Avoiding collaboration with others"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-052",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Why might AI-related career paths span multiple industries rather than being limited to tech companies?",
+    "options": [
+      "AI tools are increasingly adopted in finance, healthcare, retail, education, and other sectors",
+      "AI is used exclusively by pure technology companies",
+      "Other industries are legally barred from adopting AI",
+      "AI has no application outside software development"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-053",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "Which scenario best demonstrates AI enhancing everyday convenience?",
+    "options": [
+      "A navigation app rerouting a driver in real time to avoid unexpected traffic",
+      "A device that requires manual updates for every single function",
+      "A tool with no connection to real-time data",
+      "A purely mechanical, non-digital process"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-054",
+    "topic": "AI in Everyday Life and Future Careers",
+    "question": "What is a practical first step for a student interested in an AI-related career?",
+    "options": [
+      "Building foundational skills in AI literacy, prompt engineering, and critical thinking through coursework and practice",
+      "Avoiding any exposure to AI tools entirely",
+      "Waiting for AI-related jobs to disappear",
+      "Assuming no preparation is needed for AI-related roles"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-055",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Artificial General Intelligence (AGI) refers to a hypothetical AI that:",
+    "options": [
+      "Can perform a single narrow task very well",
+      "Possesses human-level cognitive ability across a wide range of tasks",
+      "Is limited strictly to arithmetic calculations",
+      "Already fully exists and is widely deployed today"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-056",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "As of current understanding, AGI is best described as:",
+    "options": [
+      "A technology that already surpasses all human capabilities in every domain",
+      "A theoretical/aspirational goal that has not yet been definitively achieved",
+      "The same as basic narrow AI systems in use today",
+      "A term with no meaning in AI research"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam3-057",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Quantum computing is often discussed in relation to future AI because it could potentially:",
+    "options": [
+      "Provide significantly increased computational power for certain complex AI tasks",
+      "Replace the need for any data in machine learning",
+      "Eliminate the need for algorithms entirely",
+      "Have no connection to computing or AI at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-058",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "'Responsible AI development' generally emphasizes:",
+    "options": [
+      "Considering safety, ethics, fairness, and societal impact throughout the AI development process",
+      "Prioritizing speed of development with no other considerations",
+      "Ignoring the consequences of deploying AI systems",
+      "Avoiding any oversight or regulation"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-059",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why do researchers and policymakers discuss potential risks of AGI even though it doesn't fully exist yet?",
+    "options": [
+      "Proactively considering risks and safeguards may help ensure safer development if or when such systems emerge",
+      "Discussing hypothetical risks has no value",
+      "AGI risk discussions are entirely unnecessary",
+      "AGI is scheduled for release on a fixed, known date"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-060",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which of the following is a commonly discussed potential future trend in AI over the next 5-10 years?",
+    "options": [
+      "Continued advances in multimodal AI systems that combine text, image, audio, and video understanding",
+      "The complete disappearance of all AI research",
+      "A total ban on AI development worldwide",
+      "AI development remaining completely unchanged from today"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-061",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why is 'AI safety' research considered important as AI systems become more capable?",
+    "options": [
+      "To help ensure advanced AI systems behave reliably and align with human values and intentions",
+      "AI safety research has no practical purpose",
+      "More capable AI systems require no additional safety consideration",
+      "Safety only matters for older, less capable AI systems"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-062",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Quantum computing differs from classical computing primarily in that it:",
+    "options": [
+      "Uses principles of quantum mechanics, like superposition, to process information in fundamentally different ways",
+      "Is identical to classical computing with a different name",
+      "Cannot be used for any computational tasks",
+      "Has existed since the 1800s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-063",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which best describes a responsible approach to developing increasingly powerful AI systems?",
+    "options": [
+      "Incorporating testing, transparency, and stakeholder input throughout development",
+      "Deploying systems immediately with no testing whatsoever",
+      "Avoiding any consideration of societal impact",
+      "Keeping all development processes completely secret from regulators"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-064",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why might the emergence of AGI, if achieved, raise significant ethical questions?",
+    "options": [
+      "A system with broad human-level or greater capability could have far-reaching effects on employment, safety, and society",
+      "AGI would have no meaningful impact on society",
+      "Ethical questions are irrelevant to advanced technology",
+      "AGI raises no new considerations beyond current narrow AI"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-065",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which of the following reflects a realistic, near-term rather than speculative AI trend?",
+    "options": [
+      "Continued improvement in AI-assisted coding, writing, and data analysis tools",
+      "Fully autonomous AGI systems running all global governments",
+      "Complete elimination of human decision-making everywhere",
+      "AI development freezing entirely with no further progress"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-066",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why do some experts advocate for international cooperation on AI governance?",
+    "options": [
+      "Because AI's impact and risks can cross national borders, requiring coordinated policy approaches",
+      "AI development only affects a single country at a time",
+      "International cooperation has no relevance to technology policy",
+      "Governance frameworks are unnecessary for global technologies"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-067",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which best describes the difference between narrow AI used today and hypothetical AGI?",
+    "options": [
+      "Narrow AI excels at specific tasks, while AGI would generalize across many types of tasks like a human",
+      "There is no meaningful difference between the two",
+      "AGI is a simpler, more limited version of narrow AI",
+      "Narrow AI already possesses general human-level reasoning"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-068",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why is 'explainability' an important area of ongoing AI research?",
+    "options": [
+      "It helps build trust and accountability, especially for high-stakes AI decisions",
+      "Explainability has no relevance to AI trustworthiness",
+      "AI decisions never need to be understood by humans",
+      "Only hardware performance matters, not explainability"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-069",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which of these is a potential future application often associated with more advanced AI and computing power?",
+    "options": [
+      "Accelerated drug discovery through AI-assisted molecular simulation",
+      "The complete elimination of all scientific research",
+      "A total halt in technological innovation",
+      "Removing computers from scientific research entirely"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-070",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why might increased AI capability without adequate safeguards be considered risky?",
+    "options": [
+      "Highly capable systems making consequential decisions without proper oversight could lead to unintended harms",
+      "More capable AI automatically guarantees safer outcomes with no risk",
+      "Safeguards are irrelevant regardless of AI capability",
+      "Risk only applies to older, less capable systems"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-071",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "What role might quantum computing play in future machine learning research, according to ongoing exploration?",
+    "options": [
+      "Potentially speeding up certain types of complex computations used in training or optimizing models",
+      "Quantum computing has no connection to machine learning",
+      "It would make all current AI models entirely obsolete overnight",
+      "It eliminates the need for data in AI training"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-072",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why do many organizations publish AI ethics principles or guidelines as AI capabilities grow?",
+    "options": [
+      "To provide a framework for responsible development and use as the technology's impact expands",
+      "Such guidelines have no real-world function",
+      "Ethics principles are legally meaningless documents",
+      "Organizations are required to avoid any ethical considerations"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-073",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which best reflects a balanced perspective on discussing AGI's future potential?",
+    "options": [
+      "Acknowledging both the potential benefits and the significant uncertainties/risks involved",
+      "Assuming AGI will definitely arrive on a specific date with total certainty",
+      "Dismissing AGI as entirely impossible with no further discussion needed",
+      "Ignoring all expert perspectives on the topic"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-074",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why is interdisciplinary collaboration often recommended for guiding advanced AI development?",
+    "options": [
+      "Complex societal implications benefit from diverse expertise beyond just technical knowledge",
+      "Only computer scientists have relevant expertise for AI development",
+      "Interdisciplinary collaboration slows progress with no benefit",
+      "Ethical and policy expertise is irrelevant to technology"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-075",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which of the following best describes 'alignment' in AI safety discussions?",
+    "options": [
+      "Ensuring an AI system's goals and behavior are consistent with human values and intentions",
+      "Physically aligning computer hardware components",
+      "A term unrelated to AI development",
+      "Synchronizing multiple AI systems' clock settings"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-076",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why might rapid advances in generative AI over the past few years inform predictions about future AI trends?",
+    "options": [
+      "Recent progress can offer insight into the pace and direction of continued development, though predictions remain uncertain",
+      "Past progress has no bearing on future trends",
+      "AI development has remained completely static for decades",
+      "Generative AI has no relevance to broader AI trends"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-077",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which is a reasonable, moderate view on the timeline for achieving AGI?",
+    "options": [
+      "Experts have varying predictions and significant uncertainty remains about when or if AGI will be achieved",
+      "All experts agree on an exact, universally accepted date",
+      "AGI has already been fully achieved and deployed globally",
+      "The topic is considered entirely irrelevant by researchers"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-078",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why do discussions of future AI often pair technological potential with calls for responsible governance?",
+    "options": [
+      "Powerful technology's benefits are best realized when paired with safeguards that manage its risks",
+      "Governance and technological potential are unrelated topics",
+      "Responsible governance always prevents any technological progress",
+      "Powerful AI requires no policy consideration whatsoever"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-079",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Which best describes a realistic contribution students today could make toward responsible future AI development?",
+    "options": [
+      "Building strong foundations in AI literacy and ethics to inform responsible use and advocacy later in their careers",
+      "Waiting passively with no engagement in the topic",
+      "Avoiding any study of AI-related ethics",
+      "Assuming future AI development requires no informed citizens"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam3-080",
+    "topic": "Future Trends in AI & Emerging Technologies",
+    "question": "Why is it important to distinguish between current AI capabilities and speculative future scenarios like AGI?",
+    "options": [
+      "It helps ground conversations in accurate understanding rather than confusing today's tools with hypothetical future systems",
+      "There is no meaningful distinction to make",
+      "All AI systems today already qualify as AGI",
+      "Speculation is always identical to established fact"
+    ],
+    "correctIndex": 0
+  }
+]

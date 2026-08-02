@@ -1,0 +1,32 @@
+/* Type roles
+   Display  — Fraunces (a journal/textbook serif with real character,
+              used with restraint for week titles and the dashboard hero)
+   Body     — Inter (quiet, does the actual work of reading)
+   Mono     — JetBrains Mono (terminal-style header on every week page,
+              exam timers/numbering, data readouts)
+*/
+
+:root {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+.font-mono { font-family: var(--font-mono); letter-spacing: -0.01em; }
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}

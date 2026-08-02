@@ -1,0 +1,962 @@
+[
+  {
+    "id": "exam1-001",
+    "topic": "Introduction to AI",
+    "question": "Which best defines Artificial Intelligence?",
+    "options": [
+      "The study of ancient computing machines",
+      "The simulation of human intelligence processes by machines, especially computer systems",
+      "A programming language used only for robotics",
+      "A type of computer hardware"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-002",
+    "topic": "Introduction to AI",
+    "question": "Who is widely credited with helping organize the 1956 Dartmouth Conference, considered the founding event of AI as a field?",
+    "options": [
+      "Alan Turing",
+      "John McCarthy",
+      "Bill Gates",
+      "Ada Lovelace"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-003",
+    "topic": "Introduction to AI",
+    "question": "The 'Turing Test,' proposed by Alan Turing, is designed to evaluate:",
+    "options": [
+      "A machine's processing speed",
+      "A machine's ability to exhibit behavior indistinguishable from a human",
+      "A machine's storage capacity",
+      "A machine's power consumption"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-004",
+    "topic": "Introduction to AI",
+    "question": "Which type of AI is designed to perform a single task, such as facial recognition or playing chess?",
+    "options": [
+      "Artificial General Intelligence",
+      "Artificial Narrow Intelligence",
+      "Artificial Superintelligence",
+      "Symbolic AI"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-005",
+    "topic": "Introduction to AI",
+    "question": "Artificial General Intelligence (AGI) refers to:",
+    "options": [
+      "AI limited to one specific task",
+      "AI that surpasses human intelligence in all domains",
+      "A hypothetical AI with human-level cognitive ability across a wide range of tasks",
+      "A type of database software"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "exam1-006",
+    "topic": "Introduction to AI",
+    "question": "Artificial Superintelligence (ASI) describes AI that:",
+    "options": [
+      "Exceeds human intelligence across virtually all fields",
+      "Only works within narrow, predefined tasks",
+      "Cannot learn from data",
+      "Is the earliest stage of AI development"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-007",
+    "topic": "Introduction to AI",
+    "question": "Which of the following is an example of Narrow AI in everyday use?",
+    "options": [
+      "Siri answering a voice command",
+      "A hypothetical AI that can reason like a human across all subjects",
+      "A machine that exceeds human intelligence in every domain",
+      "An AI with full self-awareness"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-008",
+    "topic": "Introduction to AI",
+    "question": "Google Maps' route-suggestion feature is an example of AI applied to:",
+    "options": [
+      "Image recognition only",
+      "Navigation and real-time data optimization",
+      "Robotics manufacturing",
+      "Genetic engineering"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-009",
+    "topic": "Introduction to AI",
+    "question": "ChatGPT is best classified as a form of:",
+    "options": [
+      "Robotics hardware",
+      "Generative/conversational AI built on large language models",
+      "Narrow AI limited to arithmetic only",
+      "Superintelligent AGI"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-010",
+    "topic": "Introduction to AI",
+    "question": "Which decade saw the first significant 'AI winter,' a period of reduced funding and interest in AI research?",
+    "options": [
+      "1950s",
+      "1970s",
+      "2000s",
+      "2020s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-011",
+    "topic": "Introduction to AI",
+    "question": "Modern AI's resurgence since the 2010s is largely attributed to advances in:",
+    "options": [
+      "Typewriters",
+      "Deep learning, big data, and increased computing power",
+      "Analog telephones",
+      "Mechanical calculators"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-012",
+    "topic": "Introduction to AI",
+    "question": "Which statement about narrow AI is most accurate?",
+    "options": [
+      "It can perform any intellectual task a human can",
+      "It is designed and trained for a specific task or a limited set of tasks",
+      "It does not exist yet",
+      "It only refers to physical robots"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-013",
+    "topic": "Introduction to AI",
+    "question": "As of today, most AI systems in use (like recommendation engines and voice assistants) fall under which category?",
+    "options": [
+      "Artificial Superintelligence",
+      "Artificial General Intelligence",
+      "Artificial Narrow Intelligence",
+      "Quantum AI"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "exam1-014",
+    "topic": "Introduction to AI",
+    "question": "The term 'Artificial Intelligence' was first coined in which year?",
+    "options": [
+      "1936",
+      "1956",
+      "1976",
+      "1996"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-015",
+    "topic": "Introduction to AI",
+    "question": "Which of these is NOT typically considered a real-world example of AI in daily use?",
+    "options": [
+      "Voice assistants like Siri",
+      "Spam email filters",
+      "A standard, non-smart calculator performing basic arithmetic",
+      "Streaming service recommendation systems"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "exam1-016",
+    "topic": "Introduction to AI",
+    "question": "Why is understanding the evolution of AI important for students today?",
+    "options": [
+      "It has no relevance to modern AI tools",
+      "It helps explain why current AI models learn from data rather than only following fixed rules",
+      "Only historians need this knowledge",
+      "AI has not changed since the 1950s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-017",
+    "topic": "Branches and Applications of AI",
+    "question": "Which branch of AI focuses on enabling systems to learn patterns from data rather than being explicitly programmed?",
+    "options": [
+      "Robotics",
+      "Machine Learning",
+      "Expert Systems",
+      "Computer Vision"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-018",
+    "topic": "Branches and Applications of AI",
+    "question": "Natural Language Processing (NLP) primarily deals with:",
+    "options": [
+      "Enabling machines to understand and generate human language",
+      "Controlling physical robotic arms",
+      "Diagnosing hardware failures",
+      "Rendering 3D graphics"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-019",
+    "topic": "Branches and Applications of AI",
+    "question": "Computer Vision is the branch of AI concerned with:",
+    "options": [
+      "Understanding spoken language",
+      "Enabling machines to interpret and process visual information from images or video",
+      "Managing financial transactions",
+      "Writing computer code automatically"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-020",
+    "topic": "Branches and Applications of AI",
+    "question": "An 'expert system' in AI is best described as:",
+    "options": [
+      "A robot that mimics human movement",
+      "A program that emulates the decision-making ability of a human expert using a knowledge base of rules",
+      "A general-purpose search engine",
+      "A type of computer virus"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-021",
+    "topic": "Branches and Applications of AI",
+    "question": "Robotics as an AI branch primarily combines AI with:",
+    "options": [
+      "Physical machines/hardware that can sense and act in the real world",
+      "Purely theoretical mathematics",
+      "Social media algorithms",
+      "Word processing software"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-022",
+    "topic": "Branches and Applications of AI",
+    "question": "In healthcare, AI is commonly applied to:",
+    "options": [
+      "Assisting in medical image diagnosis and predicting disease risk",
+      "Replacing all doctors entirely",
+      "Only scheduling appointments",
+      "Manufacturing surgical tools"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-023",
+    "topic": "Branches and Applications of AI",
+    "question": "In the business sector, AI applications commonly include:",
+    "options": [
+      "Customer service chatbots and demand forecasting",
+      "Only paying employee salaries",
+      "Physical building construction",
+      "Printing paper documents"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-024",
+    "topic": "Branches and Applications of AI",
+    "question": "In education, AI-powered systems are often used for:",
+    "options": [
+      "Personalized learning recommendations and automated grading assistance",
+      "Replacing the need for any human teachers entirely",
+      "Only building school furniture",
+      "Manually recording attendance with pen and paper"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-025",
+    "topic": "Branches and Applications of AI",
+    "question": "Which AI branch would most likely power a self-driving car's ability to recognize pedestrians and traffic signs?",
+    "options": [
+      "Expert Systems",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Symbolic Logic only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-026",
+    "topic": "Branches and Applications of AI",
+    "question": "A chatbot that answers customer questions in plain English is primarily relying on:",
+    "options": [
+      "Computer Vision",
+      "Natural Language Processing",
+      "Robotics",
+      "Expert Systems only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-027",
+    "topic": "Branches and Applications of AI",
+    "question": "Which of these best represents machine learning applied in business?",
+    "options": [
+      "A spreadsheet with fixed formulas",
+      "A recommendation engine that improves suggestions as it processes more customer data",
+      "A printed company brochure",
+      "A manual inventory count"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-028",
+    "topic": "Branches and Applications of AI",
+    "question": "Medical diagnostic tools that analyze X-rays for signs of disease primarily use which AI branch?",
+    "options": [
+      "Natural Language Processing",
+      "Computer Vision",
+      "Robotics",
+      "Expert Systems exclusively"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-029",
+    "topic": "Branches and Applications of AI",
+    "question": "Which of the following is an example of an expert system application?",
+    "options": [
+      "A rule-based tax-advice program that mimics an accountant's reasoning",
+      "A drone flying autonomously",
+      "A translation app",
+      "An image-generation tool"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-030",
+    "topic": "Branches and Applications of AI",
+    "question": "Warehouse robots that pick and sort packages demonstrate the AI branch of:",
+    "options": [
+      "Robotics",
+      "Natural Language Processing",
+      "Expert Systems",
+      "Data visualization"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-031",
+    "topic": "Branches and Applications of AI",
+    "question": "Which sector combines NLP and Machine Learning to power automated essay-feedback tools for students?",
+    "options": [
+      "Manufacturing",
+      "Education",
+      "Agriculture",
+      "Mining"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-032",
+    "topic": "Branches and Applications of AI",
+    "question": "Why do most real-world AI applications combine multiple branches rather than using just one?",
+    "options": [
+      "Combining branches is illegal",
+      "Real-world problems are often complex and benefit from multiple AI capabilities working together",
+      "It's cheaper to use only one branch",
+      "Regulations require using every branch of AI"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-033",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "In supervised learning, a model is trained using:",
+    "options": [
+      "Data with no labels at all",
+      "Labeled data, where each input has a known correct output",
+      "Only random noise",
+      "Physical sensors exclusively"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-034",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Unsupervised learning is best described as:",
+    "options": [
+      "Finding patterns or groupings in data that has no labeled outcomes",
+      "Training exclusively on labeled data",
+      "Learning only through trial-and-error rewards",
+      "A method that requires no data at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-035",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Reinforcement learning trains an agent primarily through:",
+    "options": [
+      "Static labeled datasets only",
+      "Rewards and penalties received from interacting with an environment",
+      "Manual rule programming with no learning",
+      "Copying a textbook exactly"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-036",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Clustering customers into groups based on purchasing behavior, without predefined labels, is an example of:",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Rule-based programming"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-037",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Training a spam filter using emails already labeled 'spam' or 'not spam' is an example of:",
+    "options": [
+      "Unsupervised learning",
+      "Supervised learning",
+      "Reinforcement learning",
+      "No learning at all"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-038",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "A game-playing AI that improves by receiving points for winning moves and losing points for bad ones is using:",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Expert system rules"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "exam1-039",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Why is data considered essential to machine learning?",
+    "options": [
+      "Data is optional and models can learn without any input",
+      "Models learn patterns and make predictions based on the data they are trained on",
+      "Data only matters for robotics",
+      "Data is only used for storage, not learning"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-040",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "A 'dataset' in machine learning refers to:",
+    "options": [
+      "A single data point",
+      "The collection of examples used to train, validate, or test a model",
+      "The programming language used",
+      "The hardware running the model"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-041",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "'Model training' is the process of:",
+    "options": [
+      "Physically assembling computer hardware",
+      "Adjusting a model's internal parameters so it can make accurate predictions from data",
+      "Deleting old datasets",
+      "Writing user manuals"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-042",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Splitting a dataset into 'training' and 'testing' sets is important because it:",
+    "options": [
+      "Has no real purpose",
+      "Allows evaluation of how well a model performs on data it hasn't seen before",
+      "Makes the dataset larger",
+      "Is only relevant for unsupervised learning"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-043",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Which learning type would best suit organizing thousands of unlabeled news articles into topic groups?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "None of these"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-044",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "'Overfitting' in machine learning refers to a model that:",
+    "options": [
+      "Performs well on training data but poorly on new, unseen data",
+      "Performs poorly on all data",
+      "Requires no training data",
+      "Only works with images"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-045",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "In reinforcement learning, the 'reward signal' serves to:",
+    "options": [
+      "Store the dataset",
+      "Guide the agent toward behaviors that lead to better outcomes",
+      "Encrypt the model",
+      "Replace the need for an environment"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-046",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Predicting a house's selling price based on historical prices of similar houses with known sale prices is an example of:",
+    "options": [
+      "Unsupervised learning",
+      "Supervised learning",
+      "Reinforcement learning",
+      "No machine learning needed"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-047",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Which of the following is an example of an unsupervised learning task?",
+    "options": [
+      "Predicting tomorrow's weather from labeled historical data",
+      "Grouping shoppers into segments based on similarity, with no predefined categories",
+      "Training a robot to walk using trial and reward",
+      "Classifying emails as spam using labeled examples"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-048",
+    "topic": "Basic Concepts in Machine Learning",
+    "question": "Why do most machine learning models require large amounts of quality data to perform well?",
+    "options": [
+      "More relevant data generally helps a model recognize patterns more accurately and generalize better",
+      "Data has no effect on model accuracy",
+      "Only reinforcement learning needs data",
+      "Quality doesn't matter, only quantity"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-049",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Natural Language Processing (NLP) enables computers to:",
+    "options": [
+      "Understand, interpret, and generate human language",
+      "Only process numerical data",
+      "Physically move robotic parts",
+      "Design computer chips"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-050",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Machine translation tools are a direct application of:",
+    "options": [
+      "Computer Vision",
+      "Natural Language Processing",
+      "Robotics",
+      "Expert Systems only"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-051",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Sentiment analysis is used to:",
+    "options": [
+      "Determine the emotional tone behind a piece of text",
+      "Translate text between languages",
+      "Generate images from text",
+      "Control robotic movement"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-052",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "A chatbot that can hold a conversation and answer customer questions relies heavily on:",
+    "options": [
+      "Robotics hardware",
+      "Natural Language Processing",
+      "Computer vision only",
+      "Physical sensors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-053",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "'Tokenization' in NLP refers to:",
+    "options": [
+      "Encrypting a password",
+      "Breaking text into smaller units like words or subwords for processing",
+      "Compressing an image file",
+      "Assigning monetary value to data"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-054",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Which of the following is a practical problem NLP helps solve?",
+    "options": [
+      "Automatically summarizing long documents into shorter text",
+      "Physically sorting warehouse packages",
+      "Diagnosing hardware malfunctions",
+      "3D-printing objects"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-055",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Sentiment analysis is commonly used by businesses to:",
+    "options": [
+      "Monitor customer opinions about products on social media or reviews",
+      "Translate legal contracts only",
+      "Design product packaging",
+      "Manage physical inventory"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-056",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Which best describes how modern NLP systems generate human-like text?",
+    "options": [
+      "By randomly selecting words with no pattern",
+      "By predicting likely sequences of words based on patterns learned from large amounts of text data",
+      "By directly copying a fixed dictionary",
+      "By using only hard-coded grammar rules with no learning"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-057",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "A chatbot misunderstanding slang or regional expressions highlights which challenge of NLP?",
+    "options": [
+      "NLP systems have unlimited understanding of all language variations",
+      "Language is nuanced and NLP models can struggle with slang, context, or ambiguity",
+      "NLP cannot process any text at all",
+      "This is not a real NLP challenge"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-058",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Voice assistants like Siri or Google Assistant combine NLP with:",
+    "options": [
+      "Speech recognition to convert spoken audio into text for processing",
+      "Physical robotic movement only",
+      "Computer vision exclusively",
+      "No AI at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-059",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Which of these tasks is an example of text summarization, an NLP application?",
+    "options": [
+      "Condensing a 10-page report into a short paragraph while keeping key points",
+      "Translating a menu into another language",
+      "Detecting objects in a photo",
+      "Sorting laundry by color"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-060",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "In NLP, 'context' matters because:",
+    "options": [
+      "The same word can have different meanings depending on surrounding words",
+      "Context has no impact on language understanding",
+      "NLP models ignore surrounding text entirely",
+      "Context only matters for translation, not other NLP tasks"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-061",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Which is an example of using NLP for accessibility?",
+    "options": [
+      "A text-to-speech tool reading webpages aloud for visually impaired users",
+      "A washing machine's spin cycle",
+      "A robot vacuum's navigation system",
+      "A calculator's arithmetic function"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-062",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Why can sentiment analysis sometimes misclassify sarcastic text?",
+    "options": [
+      "Sarcasm often uses words with literal meanings opposite to the intended tone, which is hard for models to detect",
+      "Sarcasm is always correctly identified by NLP",
+      "Sentiment analysis cannot process any text",
+      "Sarcasm doesn't exist in written language"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-063",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Real-time captioning of a video's spoken audio into on-screen text primarily uses:",
+    "options": [
+      "Speech recognition and NLP",
+      "Computer vision only",
+      "Robotics",
+      "Expert systems only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-064",
+    "topic": "Natural Language Processing (NLP)",
+    "question": "Why is NLP considered essential to how people interact with generative AI chat tools like ChatGPT?",
+    "options": [
+      "NLP allows the AI to understand a user's typed prompt and generate a coherent, relevant response",
+      "NLP is unrelated to chat-based AI tools",
+      "NLP only works with images, not text",
+      "Chat tools do not use any language processing"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-065",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Prompt engineering is best defined as:",
+    "options": [
+      "Writing and refining inputs to guide an AI system toward a desired output",
+      "Building physical AI hardware",
+      "Installing software updates",
+      "Designing computer chips"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-066",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "A 'prompt' in the context of generative AI refers to:",
+    "options": [
+      "The AI model's source code",
+      "The input text or instruction a user gives to an AI system",
+      "The AI company's business plan",
+      "A type of computer virus"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-067",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Why does the wording of a prompt significantly affect an AI's output?",
+    "options": [
+      "AI models generate responses based on patterns learned from the specific input given, so different wording can lead to different results",
+      "Wording has no effect on AI output",
+      "All prompts always produce identical results",
+      "AI models ignore the text of prompts entirely"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-068",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "A vague prompt like 'Tell me about dogs' is likely to produce:",
+    "options": [
+      "A highly specific, perfectly targeted answer every time",
+      "A broad, general response that may not match a specific need",
+      "An error message with no response",
+      "A response only in another language"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-069",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Adding specific details to a prompt generally:",
+    "options": [
+      "Has no impact on the AI's response",
+      "Helps the AI generate a more relevant and useful response",
+      "Always makes the AI refuse to respond",
+      "Deletes the AI's training data"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-070",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Which of these is a basic technique for improving a prompt's effectiveness?",
+    "options": [
+      "Leaving the prompt intentionally vague",
+      "Clearly stating the task, context, and desired format",
+      "Avoiding any punctuation",
+      "Writing only in all capital letters"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-071",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Why is prompt engineering considered essential for effective human-AI interaction?",
+    "options": [
+      "It has no real impact on the quality of AI responses",
+      "Well-crafted prompts help align the AI's output with the user's actual intent and needs",
+      "AI models cannot process any prompts without engineering",
+      "Prompt engineering is only useful for image generation"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-072",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Which of the following best demonstrates specificity in a prompt?",
+    "options": [
+      "'Write something'",
+      "'Write a 100-word product description for a waterproof backpack aimed at college students'",
+      "'Help me'",
+      "'Do a thing about backpacks'"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-073",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Iteratively refining a prompt after reviewing the AI's first response is called:",
+    "options": [
+      "Prompt testing/refining",
+      "Data encryption",
+      "Model training",
+      "Hardware calibration"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-074",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Which scenario best illustrates why prompt engineering matters in everyday use of generative AI?",
+    "options": [
+      "A student gets a more useful study guide by specifying the topic, format, and difficulty level in their prompt",
+      "A student gets the exact same answer no matter what they type",
+      "Prompt wording is irrelevant to the AI's usefulness",
+      "Only programmers can write prompts"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-075",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Providing an AI with an example of the desired output style within the prompt itself is an example of:",
+    "options": [
+      "Few-shot prompting",
+      "Deleting the prompt",
+      "Hardware upgrading",
+      "Data mining"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-076",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Why might a poorly worded prompt lead to an inaccurate or unhelpful AI response?",
+    "options": [
+      "The AI has no way to interpret unclear or ambiguous instructions the same way a human might infer intent",
+      "Poorly worded prompts always produce perfect results",
+      "AI models rewrite prompts automatically to be perfect",
+      "Wording never influences AI output"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-077",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Which best describes the relationship between prompts and AI behavior?",
+    "options": [
+      "Prompts have no influence on how an AI responds",
+      "Prompts act as instructions that shape and guide what the AI generates",
+      "AI behavior is fixed and cannot be shaped by prompts",
+      "Prompts only work for image-generating AI"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-078",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "A student wants an AI to explain a concept 'like I'm a beginner.' This prompt technique is primarily using:",
+    "options": [
+      "Audience/context framing to guide the tone and complexity of the response",
+      "Random word selection",
+      "Hardware specification",
+      "Data encryption"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam1-079",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "Why is prompt engineering considered a practical skill rather than a purely technical/programming skill?",
+    "options": [
+      "It requires writing machine code",
+      "It mainly involves clear communication and structured thinking to guide an AI's output, not traditional coding",
+      "It requires building physical circuits",
+      "It is unrelated to communication skills"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam1-080",
+    "topic": "Introduction to Prompt Engineering",
+    "question": "What is a likely outcome of testing multiple prompt variations for the same task?",
+    "options": [
+      "All variations always produce identical results",
+      "Comparing outputs can reveal which prompt phrasing produces the most accurate or useful response",
+      "Testing prompts is prohibited",
+      "It always makes the AI system crash"
+    ],
+    "correctIndex": 1
+  }
+]

@@ -1,0 +1,962 @@
+[
+  {
+    "id": "exam2-001",
+    "topic": "Writing Effective Prompts",
+    "question": "An 'instructional' prompt format typically:",
+    "options": [
+      "Directly tells the AI what task to perform, e.g., 'Summarize this article in 3 bullet points'",
+      "Only asks open-ended questions with no direction",
+      "Contains no text at all",
+      "Is exclusively used for images"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-002",
+    "topic": "Writing Effective Prompts",
+    "question": "A 'conversational' prompt format is characterized by:",
+    "options": [
+      "A single rigid command with no dialogue",
+      "Engaging the AI in a back-and-forth, dialogue-like exchange",
+      "Never allowing follow-up questions",
+      "Only using bullet points"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-003",
+    "topic": "Writing Effective Prompts",
+    "question": "'Few-shot' prompting involves:",
+    "options": [
+      "Giving the AI a handful of examples of the desired input/output pattern before asking it to complete a new one",
+      "Giving no context at all",
+      "Only using single-word prompts",
+      "Disabling the AI's ability to respond"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-004",
+    "topic": "Writing Effective Prompts",
+    "question": "Which of these prompts demonstrates the highest specificity?",
+    "options": [
+      "'Write about food'",
+      "'Write a 150-word blog intro about Filipino street food for a travel website, in a friendly tone'",
+      "'Food please'",
+      "'Something about eating'"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-005",
+    "topic": "Writing Effective Prompts",
+    "question": "Why is clarity important when writing a prompt?",
+    "options": [
+      "Clear prompts reduce ambiguity, helping the AI understand exactly what's being asked",
+      "Clarity has no effect on AI responses",
+      "Unclear prompts always produce better results",
+      "Clarity is only relevant for image prompts"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-006",
+    "topic": "Writing Effective Prompts",
+    "question": "'Testing and refining' a prompt typically involves:",
+    "options": [
+      "Writing a prompt once and never changing it",
+      "Reviewing the AI's output and adjusting the prompt's wording to improve results",
+      "Deleting the AI account",
+      "Ignoring the AI's response entirely"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-007",
+    "topic": "Writing Effective Prompts",
+    "question": "A student asks an AI: 'Can you help me brainstorm topics, and then let's narrow them down together?' This is an example of which prompt format?",
+    "options": [
+      "Instructional",
+      "Conversational",
+      "Few-shot",
+      "None of these"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-008",
+    "topic": "Writing Effective Prompts",
+    "question": "Which technique would most help an AI match a very specific writing style requested by a user?",
+    "options": [
+      "Providing a few-shot example written in that exact style",
+      "Giving no examples at all",
+      "Asking a completely unrelated question",
+      "Refusing to specify a style"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-009",
+    "topic": "Writing Effective Prompts",
+    "question": "Why might a prompt that works well for one AI model produce a different result on another model?",
+    "options": [
+      "All AI models are functionally identical with no differences",
+      "Different models are trained differently and may interpret and respond to the same prompt differently",
+      "Prompts never affect outputs",
+      "This scenario is impossible"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-010",
+    "topic": "Writing Effective Prompts",
+    "question": "Which of the following best improves a vague prompt like 'Make this better'?",
+    "options": [
+      "Leaving it as is",
+      "Specifying what 'better' means — e.g., 'Make this paragraph more concise and formal'",
+      "Making it even vaguer",
+      "Removing all context"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-011",
+    "topic": "Writing Effective Prompts",
+    "question": "When refining prompts iteratively, what should a user primarily compare between attempts?",
+    "options": [
+      "Whether the AI's output better matches the intended goal each time",
+      "The number of words typed only",
+      "The color of the interface",
+      "The time of day"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-012",
+    "topic": "Writing Effective Prompts",
+    "question": "A role-based prompt technique, such as 'Act as a career counselor and advise me on...', is intended to:",
+    "options": [
+      "Have no effect on the response",
+      "Guide the tone, perspective, and expertise style of the AI's answer",
+      "Crash the AI system",
+      "Only work with images"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-013",
+    "topic": "Writing Effective Prompts",
+    "question": "Which prompt structure element helps an AI understand the expected output length or format?",
+    "options": [
+      "Explicitly stating constraints like 'in 5 bullet points' or 'under 100 words'",
+      "Leaving format completely unspecified",
+      "Writing only in emojis",
+      "Repeating the same word many times"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-014",
+    "topic": "Writing Effective Prompts",
+    "question": "Why is providing context often important in a prompt?",
+    "options": [
+      "Context helps the AI tailor its response appropriately to the situation",
+      "Context always confuses the AI",
+      "AI models cannot process any context",
+      "Context is irrelevant to output quality"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-015",
+    "topic": "Writing Effective Prompts",
+    "question": "Comparing two different prompt phrasings side-by-side to see which produces a more useful response is an example of:",
+    "options": [
+      "Prompt comparison/testing",
+      "Data encryption",
+      "Hardware benchmarking",
+      "Model retraining"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-016",
+    "topic": "Writing Effective Prompts",
+    "question": "What is a likely risk of writing an overly complex, multi-part prompt without clear structure?",
+    "options": [
+      "The AI may address only part of the request or produce a confused response",
+      "The AI will always perfectly address every part",
+      "Complex prompts always produce simpler outputs",
+      "There is no risk at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-017",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "AI 'bias' typically refers to:",
+    "options": [
+      "Systematic errors or unfair outcomes in AI outputs, often reflecting patterns in training data",
+      "A feature that makes AI perform better for everyone equally",
+      "A type of encryption",
+      "A hardware malfunction only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-018",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "A common source of bias in AI systems is:",
+    "options": [
+      "Training data that underrepresents certain groups or reflects historical inequalities",
+      "Random number generation",
+      "The color scheme of the user interface",
+      "The programming language used"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-019",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "'Fairness' in AI systems generally means:",
+    "options": [
+      "Every user gets an identical, unpersonalized response",
+      "The AI's outcomes do not unjustly disadvantage particular individuals or groups",
+      "The AI never makes any errors",
+      "Fairness is not a relevant AI concept"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-020",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Using AI to write an entire assignment and submitting it as one's own original work, without disclosure, most directly raises concerns about:",
+    "options": [
+      "Computer hardware limitations",
+      "Academic integrity",
+      "Internet connectivity",
+      "Battery life"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-021",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "'Responsible use' of AI tools includes:",
+    "options": [
+      "Verifying AI-generated information before relying on it",
+      "Assuming all AI output is always accurate without checking",
+      "Sharing personal data with AI tools with no caution",
+      "Ignoring institutional policies on AI use"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-022",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Why can an AI hiring tool trained on historical hiring data become biased against certain applicants?",
+    "options": [
+      "It cannot become biased under any circumstances",
+      "If past hiring data reflects human biases, the AI may learn and repeat those same patterns",
+      "Hiring tools do not use any training data",
+      "Bias only affects image-generating AI"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-023",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Which action best supports academic integrity when using AI tools for schoolwork?",
+    "options": [
+      "Disclosing AI assistance according to instructor guidelines and doing one's own critical thinking",
+      "Submitting AI-generated text as entirely original without disclosure",
+      "Letting the AI make all decisions without review",
+      "Avoiding any learning from the assignment"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-024",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "'Fair use' in the context of AI-generated content most often refers to debates around:",
+    "options": [
+      "Whether using copyrighted material to train or with AI tools falls within legal and ethical boundaries",
+      "Internet speed regulations",
+      "Battery charging standards",
+      "Screen resolution requirements"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-025",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Which of these is an example of AI bias with real-world consequences?",
+    "options": [
+      "A facial recognition system that performs less accurately on certain skin tones due to underrepresentation in training data",
+      "A calculator that adds two numbers correctly",
+      "A weather app showing the correct temperature",
+      "A clock displaying accurate time"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-026",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Mitigating bias in AI systems often involves:",
+    "options": [
+      "Ignoring the issue entirely",
+      "Using more diverse and representative training data along with careful testing",
+      "Reducing the amount of data used to zero",
+      "Removing all human oversight"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-027",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Why is human oversight important when deploying AI in high-stakes decisions like loan approvals or hiring?",
+    "options": [
+      "AI systems can make biased or incorrect decisions that require human review and accountability",
+      "AI is always perfectly fair and needs no oversight",
+      "Human oversight is only needed for robotics",
+      "High-stakes decisions should never involve any technology"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-028",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "A student debate on 'Should AI-generated art be considered original work?' primarily explores which ethical theme?",
+    "options": [
+      "Battery efficiency",
+      "Ownership, originality, and fair use in creative AI outputs",
+      "Hardware cooling systems",
+      "Internet bandwidth"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-029",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Which best describes an ethical concern with AI systems that collect and analyze large amounts of personal data?",
+    "options": [
+      "Privacy and consent regarding how personal data is gathered and used",
+      "There are no ethical concerns with data collection",
+      "Data collection is always fully transparent by default",
+      "This only applies to physical robots"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-030",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "Why do many schools require students to disclose AI use in assignments?",
+    "options": [
+      "To ensure transparency and maintain academic integrity standards",
+      "Disclosure is legally required worldwide with no exceptions",
+      "Schools want to ban all technology",
+      "It has no connection to academic honesty"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-031",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "An AI chatbot that generates false information confidently, without disclosing uncertainty, raises which ethical concern?",
+    "options": [
+      "The risk of misinformation and the importance of critically verifying AI outputs",
+      "No ethical concern at all",
+      "A hardware defect",
+      "A copyright violation only"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-032",
+    "topic": "Bias, Ethics, and Fair Use in AI",
+    "question": "What is one responsible practice for students using generative AI tools for research?",
+    "options": [
+      "Cross-checking AI-generated facts against credible, verified sources",
+      "Accepting every AI-generated fact without question",
+      "Avoiding all forms of research verification",
+      "Sharing exam answers directly from AI without review"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-033",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Generative AI systems like ChatGPT primarily work by:",
+    "options": [
+      "Predicting and generating sequences of text based on patterns learned from large training datasets",
+      "Physically typing on a keyboard",
+      "Randomly selecting pre-written paragraphs from a fixed list",
+      "Copying entire websites verbatim"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-034",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "DALL·E is best known as a tool for:",
+    "options": [
+      "Generating images from text descriptions",
+      "Writing legal contracts",
+      "Managing spreadsheets",
+      "Translating speech to sign language"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-035",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Google Gemini is an example of:",
+    "options": [
+      "A generative AI system capable of multimodal tasks like text and image understanding",
+      "A physical robot",
+      "A word processing application",
+      "A type of computer hardware"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-036",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "A key opportunity of generative AI in content creation is:",
+    "options": [
+      "It can help quickly draft, brainstorm, or summarize content, speeding up creative workflows",
+      "It always eliminates the need for any human review",
+      "It guarantees 100% factual accuracy in every response",
+      "It cannot generate any text at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-037",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "A key risk associated with generative AI image tools is:",
+    "options": [
+      "They can be used to create realistic but misleading or fake images (deepfakes)",
+      "They cannot produce any visual content",
+      "They only work with black-and-white images",
+      "They require no ethical consideration"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-038",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Text summarization using generative AI is useful because it:",
+    "options": [
+      "Condenses long content into key points, saving reading time",
+      "Always changes the meaning of the original text incorrectly",
+      "Only works on images",
+      "Deletes the original document permanently"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-039",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Which best describes how generative AI models are trained to produce text?",
+    "options": [
+      "By memorizing and repeating one fixed response for every prompt",
+      "By learning statistical patterns in language from massive datasets of text",
+      "By connecting directly to a human writer in real time",
+      "By using only hardware sensors"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "exam2-040",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "A risk of relying on generative AI for factual writing tasks is:",
+    "options": [
+      "AI models can 'hallucinate,' or generate plausible-sounding but false information",
+      "AI models always provide perfectly verified citations",
+      "There is no risk since AI is always correct",
+      "Generative AI cannot produce factual content at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-041",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Image generation tools use text prompts to:",
+    "options": [
+      "Guide the visual style, subject, and composition of the generated image",
+      "Only generate random noise images",
+      "Translate the text into another spoken language",
+      "Compress existing photo files"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-042",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Which use case best illustrates a responsible application of generative AI for image creation?",
+    "options": [
+      "Generating original concept art for a personal creative project, with appropriate disclosure",
+      "Creating a fake image of a real person to spread false claims",
+      "Using generated images to impersonate someone without consent",
+      "Bypassing copyright protections intentionally"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-043",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Why should users critically evaluate generative AI output rather than accepting it at face value?",
+    "options": [
+      "Generative AI can produce inaccurate, biased, or fabricated content despite sounding confident",
+      "Generative AI output is always 100% accurate",
+      "Critical evaluation is unnecessary for AI-generated content",
+      "Only images require evaluation, not text"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-044",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Which of the following is a legitimate educational use of generative AI text tools?",
+    "options": [
+      "Using AI to help brainstorm essay outlines before writing original content",
+      "Submitting AI-written essays as entirely original work without disclosure",
+      "Having AI complete an entire exam covertly",
+      "Using AI to impersonate a classmate"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-045",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "What distinguishes 'generative' AI from earlier, purely analytical AI systems?",
+    "options": [
+      "Generative AI creates new content, while analytical AI primarily classifies or predicts from existing data",
+      "Generative AI cannot process any data",
+      "There is no real difference between the two",
+      "Analytical AI can create new images while generative AI cannot"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-046",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "A marketing team using generative AI to draft multiple ad copy variations quickly demonstrates:",
+    "options": [
+      "An opportunity of generative AI to boost productivity and creative iteration",
+      "A risk with no possible benefit",
+      "A purely academic use case only",
+      "An example of robotics"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-047",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "Why is transparency about AI-generated content considered good practice?",
+    "options": [
+      "It helps audiences understand the origin of content and make informed judgments about its authenticity",
+      "Transparency has no value in digital media",
+      "Labeling AI content is prohibited",
+      "It only matters for printed documents"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-048",
+    "topic": "Generative AI: Text and Image Creation",
+    "question": "What is a key opportunity generative AI offers in creative industries like design and writing?",
+    "options": [
+      "Assisting professionals with rapid ideation and drafts, while human judgment refines the final product",
+      "Fully replacing all human creativity with no oversight needed",
+      "Eliminating the need for creative skills entirely",
+      "Making creative work illegal"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-049",
+    "topic": "Collaborating with AI Tools",
+    "question": "Using AI for brainstorming is most helpful when a person needs:",
+    "options": [
+      "A wide range of initial ideas to consider and refine further",
+      "A final, unchangeable answer with no further thought needed",
+      "Physical labor assistance",
+      "Hardware repairs"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-050",
+    "topic": "Collaborating with AI Tools",
+    "question": "AI coding assistants can help programmers by:",
+    "options": [
+      "Suggesting code snippets or catching potential errors, while the programmer reviews and decides",
+      "Writing and deploying all code with zero human review",
+      "Replacing the need to understand programming logic entirely",
+      "Automatically fixing all hardware issues"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-051",
+    "topic": "Collaborating with AI Tools",
+    "question": "Why is human oversight emphasized when collaborating with AI tools?",
+    "options": [
+      "AI tools can make mistakes or lack context, so human judgment helps catch and correct errors",
+      "AI tools never make mistakes",
+      "Oversight is only needed for image generation",
+      "AI tools require no supervision under any circumstance"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-052",
+    "topic": "Collaborating with AI Tools",
+    "question": "Which of these best describes an AI tool's limitation that human oversight helps address?",
+    "options": [
+      "An AI writing assistant may generate grammatically correct but factually incorrect statements",
+      "AI tools have no limitations at all",
+      "AI tools can physically move objects without help",
+      "AI tools can replace all human decision-making safely"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-053",
+    "topic": "Collaborating with AI Tools",
+    "question": "A writer using AI to get suggestions for improving sentence flow, then personally revising the final draft, demonstrates:",
+    "options": [
+      "Effective human-AI collaboration with the human retaining creative control",
+      "Full reliance on AI with no human input",
+      "A misuse of AI tools",
+      "An example of robotics"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-054",
+    "topic": "Collaborating with AI Tools",
+    "question": "What is one key benefit of using AI tools to support human creativity?",
+    "options": [
+      "AI can quickly generate variations or alternatives that a person might not have considered",
+      "AI eliminates the need for any human creativity",
+      "AI tools cannot assist with creative work",
+      "AI always produces flawless creative work with no editing needed"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-055",
+    "topic": "Collaborating with AI Tools",
+    "question": "Why might a business use an AI tool for drafting reports but still have an employee review and edit them?",
+    "options": [
+      "To ensure accuracy, appropriate tone, and context that the AI might miss",
+      "Because AI tools cannot generate any text",
+      "Because human review is legally banned",
+      "Because AI reports are always perfect"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-056",
+    "topic": "Collaborating with AI Tools",
+    "question": "Which scenario best illustrates a limitation of AI tools that requires human judgment?",
+    "options": [
+      "An AI writing assistant not understanding a company's specific internal terminology or culture",
+      "An AI perfectly understanding every possible context with no errors",
+      "AI tools requiring no data to function",
+      "AI tools functioning without any human input ever"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-057",
+    "topic": "Collaborating with AI Tools",
+    "question": "In pair programming with an AI assistant, who should typically make the final decision on whether to accept a suggested code change?",
+    "options": [
+      "The human programmer, after reviewing the suggestion",
+      "The AI, with no human review",
+      "Neither party should review the code",
+      "A randomly selected suggestion, without review"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-058",
+    "topic": "Collaborating with AI Tools",
+    "question": "Why is critical thinking still necessary when using AI tools for writing assistance?",
+    "options": [
+      "AI suggestions may not always align with the intended meaning, tone, or accuracy needed",
+      "AI suggestions are always perfectly correct",
+      "Critical thinking is unrelated to AI-assisted writing",
+      "AI eliminates the need for any thinking"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-059",
+    "topic": "Collaborating with AI Tools",
+    "question": "Which is an example of AI supporting human productivity without replacing human judgment?",
+    "options": [
+      "Using AI to quickly summarize meeting notes, then having a team member verify and highlight the key action items",
+      "Letting AI make all final business decisions with zero human review",
+      "Ignoring AI-generated suggestions entirely in all cases",
+      "Using AI to physically attend meetings"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-060",
+    "topic": "Collaborating with AI Tools",
+    "question": "A key reason AI-human collaboration is more effective than relying on AI alone is that:",
+    "options": [
+      "Humans bring context, values, and judgment that AI systems may lack",
+      "AI can fully replace human understanding without issue",
+      "Collaboration slows down all processes with no benefit",
+      "AI systems require no human input to function meaningfully in complex tasks"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-061",
+    "topic": "Collaborating with AI Tools",
+    "question": "Which best describes a responsible way to use an AI writing tool for a school assignment?",
+    "options": [
+      "Using it to get feedback or ideas, then writing and understanding the final content yourself",
+      "Copying the AI's output directly and submitting it as entirely original work",
+      "Never engaging with the material personally",
+      "Letting the AI take the exam"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-062",
+    "topic": "Collaborating with AI Tools",
+    "question": "Why do many companies establish clear guidelines for how employees can use AI tools at work?",
+    "options": [
+      "To ensure AI tools are used responsibly, ethically, and effectively within the organization",
+      "Guidelines are legally required to have zero purpose",
+      "Companies want to prevent all technology use",
+      "AI tools require no guidance to be used correctly"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-063",
+    "topic": "Collaborating with AI Tools",
+    "question": "What is a potential downside of over-relying on AI tools without developing one's own skills?",
+    "options": [
+      "Reduced ability to critically evaluate or perform tasks independently over time",
+      "There are no downsides to full reliance on AI",
+      "Over-reliance always improves independent skill",
+      "AI tools automatically build human skills with no effort"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-064",
+    "topic": "Collaborating with AI Tools",
+    "question": "Which statement best captures the idea of AI as a 'collaborator' rather than a 'replacement'?",
+    "options": [
+      "AI works best when it augments human capabilities while humans retain final judgment and creativity",
+      "AI should make every decision without any human involvement",
+      "Humans should avoid using AI tools altogether",
+      "AI tools require no human input under any scenario"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-065",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "AI 'hallucination' refers to:",
+    "options": [
+      "An AI model generating false or fabricated information that sounds plausible",
+      "A hardware malfunction causing a machine to shut down",
+      "A visual effect in AI-generated images only",
+      "An AI system becoming self-aware"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-066",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Misinformation generated by AI can be especially risky because:",
+    "options": [
+      "It can spread quickly and appear credible, making it hard for users to distinguish from accurate information",
+      "AI-generated misinformation is always clearly labeled",
+      "Misinformation cannot occur with AI systems",
+      "It has no impact on public understanding"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-067",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "'Deepfakes' refer to:",
+    "options": [
+      "AI-generated synthetic media that convincingly depicts events or statements that did not actually occur",
+      "A type of computer hardware failure",
+      "A legitimate form of journalism",
+      "A type of encrypted file format"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-068",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "A major concern with deepfake technology is:",
+    "options": [
+      "It can be used to spread false information or impersonate real people without consent",
+      "It has no real-world risks or applications",
+      "It is only used for harmless entertainment",
+      "It cannot be created without a physical camera present"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-069",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Copyright concerns related to generative AI often center on:",
+    "options": [
+      "Whether AI-generated content that closely resembles existing copyrighted works infringes on original creators' rights",
+      "The physical durability of AI hardware",
+      "Internet connection speeds",
+      "Battery life of devices"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-070",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Why is it important for users to critically evaluate AI-generated outputs rather than trusting them fully?",
+    "options": [
+      "AI models can produce confident-sounding but inaccurate or fabricated content",
+      "AI-generated content is always completely accurate",
+      "Critical evaluation has no value for AI outputs",
+      "Only human-generated content can ever be wrong"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-071",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "'Digital trust' concerns in the context of generative AI relate to:",
+    "options": [
+      "Whether people can reliably tell if content is authentic or AI-generated",
+      "The speed of internet connections",
+      "The cost of AI subscriptions",
+      "The physical weight of computer hardware"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-072",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Which of these is a recommended strategy for evaluating a suspicious AI-generated claim?",
+    "options": [
+      "Cross-referencing the claim with multiple credible, independent sources",
+      "Accepting it immediately since AI is always accurate",
+      "Sharing it widely without any verification",
+      "Assuming all AI text is fabricated with no exceptions"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-073",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Intellectual property issues in generative AI often arise when:",
+    "options": [
+      "AI models are trained on or reproduce copyrighted works without proper authorization",
+      "IP issues never apply to digital content",
+      "AI-generated content is always considered public domain automatically",
+      "Copyright law does not apply to any digital media"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-074",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Why can AI hallucinations be particularly dangerous in fields like medicine or law?",
+    "options": [
+      "Fabricated but confident-sounding information could lead to serious real-world harm if not verified",
+      "Hallucinations only occur in casual conversation with no real consequences",
+      "Medicine and law are immune to AI errors",
+      "AI cannot be used in these fields at all"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-075",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Which best describes a responsible response to encountering a deepfake video online?",
+    "options": [
+      "Verifying its authenticity through trusted fact-checking sources before sharing or believing it",
+      "Sharing it immediately without question",
+      "Assuming all videos online are automatically real",
+      "Ignoring the possibility that deepfakes exist"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-076",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "A key technical limitation of many generative AI models is that they:",
+    "options": [
+      "Generate responses based on patterns in training data and may not have real-time or fully accurate knowledge",
+      "Always have perfect, up-to-the-minute knowledge of every event",
+      "Never make factual errors",
+      "Require no training data whatsoever"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-077",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Which scenario best illustrates a risk of AI-generated misinformation during a crisis event?",
+    "options": [
+      "A fabricated but realistic-sounding news report spreading rapidly on social media before it can be fact-checked",
+      "A verified government press release",
+      "A peer-reviewed scientific study",
+      "An official weather bulletin from a meteorological agency"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-078",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Why do some countries and platforms require the labeling of AI-generated or manipulated media?",
+    "options": [
+      "To help maintain transparency and allow audiences to identify synthetic content",
+      "Labeling requirements serve no practical purpose",
+      "All AI-generated content is banned outright everywhere",
+      "Labeling is only relevant to printed newspapers"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-079",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "What is one way individuals can build resilience against AI-driven misinformation?",
+    "options": [
+      "Developing media literacy skills to critically assess sources and evidence",
+      "Believing every piece of content shared online without question",
+      "Avoiding the internet entirely",
+      "Relying solely on a single unverified source"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "exam2-080",
+    "topic": "Limitations and Risks of Generative AI",
+    "question": "Why is ongoing regulation and policy discussion around generative AI considered important?",
+    "options": [
+      "To help address emerging risks like misinformation, deepfakes, and copyright issues as the technology evolves",
+      "Regulation has no relevance to rapidly evolving technology",
+      "AI technology never changes or creates new risks",
+      "Policies about AI are unnecessary since risks do not exist"
+    ],
+    "correctIndex": 0
+  }
+]

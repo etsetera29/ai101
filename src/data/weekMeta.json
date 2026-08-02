@@ -1,0 +1,189 @@
+[
+  {
+    "id": "week01",
+    "path": "/week/1",
+    "number": "01",
+    "type": "lesson",
+    "tint": "foundations",
+    "title": "Introduction to Artificial Intelligence",
+    "guidingQuestion": "What is Artificial Intelligence, how did it evolve over time, and how is it already present in everyday technologies we use today?",
+    "needsApiKey": false,
+    "requires": []
+  },
+  {
+    "id": "week02",
+    "path": "/week/2",
+    "number": "02",
+    "type": "lesson",
+    "tint": "foundations",
+    "title": "Branches and Applications of AI",
+    "guidingQuestion": "What are the major branches of AI, and how are they applied across different sectors such as healthcare, business, and education?",
+    "needsApiKey": false,
+    "requires": ["week01"]
+  },
+  {
+    "id": "week03",
+    "path": "/week/3",
+    "number": "03",
+    "type": "lesson",
+    "tint": "foundations",
+    "title": "Basic Concepts in Machine Learning",
+    "guidingQuestion": "How do machines learn from data, and what distinguishes supervised, unsupervised, and reinforcement learning approaches?",
+    "needsApiKey": false,
+    "requires": ["week02"]
+  },
+  {
+    "id": "week04",
+    "path": "/week/4",
+    "number": "04",
+    "type": "lesson",
+    "tint": "language",
+    "title": "Natural Language Processing (NLP)",
+    "guidingQuestion": "How does AI process, understand, and generate human language, and what practical problems does NLP help solve?",
+    "needsApiKey": false,
+    "requires": ["week03"]
+  },
+  {
+    "id": "week05",
+    "path": "/week/5",
+    "number": "05",
+    "type": "lesson",
+    "tint": "language",
+    "title": "Introduction to Prompt Engineering",
+    "guidingQuestion": "How do prompts influence AI behavior, and why is prompt engineering essential for effective human–AI interaction?",
+    "needsApiKey": true,
+    "requires": ["week04"]
+  },
+  {
+    "id": "exam1",
+    "path": "/exam/1",
+    "number": "06",
+    "type": "exam",
+    "tint": "exam",
+    "title": "Long Examination #1",
+    "subtitle": "Covers Weeks 1–5",
+    "bank": "exam1-questions",
+    "requires": ["week01", "week02", "week03", "week04", "week05"]
+  },
+  {
+    "id": "week07",
+    "path": "/week/7",
+    "number": "07",
+    "type": "lesson",
+    "tint": "language",
+    "title": "Writing Effective Prompts",
+    "guidingQuestion": "What makes a prompt effective, and how do clarity, structure, and refinement improve AI-generated outputs?",
+    "needsApiKey": true,
+    "requires": ["exam1"]
+  },
+  {
+    "id": "week08",
+    "path": "/week/8",
+    "number": "08",
+    "type": "lesson",
+    "tint": "ethics",
+    "title": "Bias, Ethics, and Fair Use in AI",
+    "guidingQuestion": "What ethical issues arise from AI use, and how can bias, fairness, and academic integrity be responsibly addressed?",
+    "needsApiKey": true,
+    "requires": ["week07"]
+  },
+  {
+    "id": "week09",
+    "path": "/week/9",
+    "number": "09",
+    "type": "lesson",
+    "tint": "generative",
+    "title": "Generative AI: Text and Image Creation",
+    "guidingQuestion": "How do generative AI systems create text and images, and what opportunities and risks come with their use?",
+    "needsApiKey": true,
+    "requires": ["week08"]
+  },
+  {
+    "id": "week10",
+    "path": "/week/10",
+    "number": "10",
+    "type": "lesson",
+    "tint": "generative",
+    "title": "Collaborating with AI Tools",
+    "guidingQuestion": "How can AI tools effectively support human creativity and productivity while still requiring human judgment and oversight?",
+    "needsApiKey": true,
+    "requires": ["week09"]
+  },
+  {
+    "id": "week11",
+    "path": "/week/11",
+    "number": "11",
+    "type": "lesson",
+    "tint": "ethics",
+    "title": "Limitations and Risks of Generative AI",
+    "guidingQuestion": "What are the technical, ethical, and social risks of generative AI, and how can users critically evaluate AI outputs?",
+    "needsApiKey": true,
+    "requires": ["week10"]
+  },
+  {
+    "id": "exam2",
+    "path": "/exam/2",
+    "number": "12",
+    "type": "exam",
+    "tint": "exam",
+    "title": "Long Examination #2",
+    "subtitle": "Covers Weeks 7–11",
+    "bank": "exam2-questions",
+    "requires": ["week07", "week08", "week09", "week10", "week11"]
+  },
+  {
+    "id": "week13",
+    "path": "/week/13",
+    "number": "13",
+    "type": "lesson",
+    "tint": "context",
+    "title": "AI in the Philippine Context",
+    "guidingQuestion": "How is AI being developed and applied in the Philippines, and what role do local initiatives play in national progress?",
+    "needsApiKey": false,
+    "requires": ["exam2"]
+  },
+  {
+    "id": "week14",
+    "path": "/week/14",
+    "number": "14",
+    "type": "lesson",
+    "tint": "context",
+    "title": "AI in Everyday Life and Future Careers",
+    "guidingQuestion": "How does AI influence daily life and career opportunities, and what skills are needed for future AI-related professions?",
+    "needsApiKey": false,
+    "requires": ["week13"]
+  },
+  {
+    "id": "week15",
+    "path": "/week/15",
+    "number": "15",
+    "type": "lesson",
+    "tint": "context",
+    "title": "Future Trends in AI & Emerging Technologies",
+    "guidingQuestion": "What emerging AI technologies may shape the next decade, and what ethical responsibilities come with these advancements?",
+    "needsApiKey": true,
+    "requires": ["week14"]
+  },
+  {
+    "id": "week16_17",
+    "path": "/week/16-17",
+    "number": "16–17",
+    "type": "presentation",
+    "tint": "generative",
+    "title": "Group Presentation",
+    "guidingQuestion": "How can you present and demonstrate your understanding of the different implementations and impact of AI?",
+    "needsApiKey": false,
+    "requires": ["week15"]
+  },
+  {
+    "id": "exam3",
+    "path": "/exam/3",
+    "number": "18",
+    "type": "exam",
+    "tint": "exam",
+    "title": "Long Examination #3",
+    "subtitle": "Covers Weeks 13–15",
+    "bank": "exam3-questions",
+    "requires": ["week13", "week14", "week15"]
+  }
+]
