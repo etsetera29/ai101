@@ -33,10 +33,7 @@ export function useProgress() {
 
   const isFinished = useCallback((weekId) => !!store.finished[weekId], [store])
 
-  const missingRequirements = useCallback(
-    (requires = []) => requires.filter((id) => !store.finished[id]),
-    [store]
-  )
+  const missingRequirements = useCallback(() => [], [])
 
   const recordExamAttempt = useCallback((examId, result) => {
     setStore((prev) => ({
