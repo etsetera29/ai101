@@ -13,6 +13,6 @@
  */
 export const EXAM_LOCKS = {
   exam1: false,
-  exam2: false,
-  exam3: false,
+  exam2: true,
+  exam3: true,
 }
