@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import weekMeta from '../../data/weekMeta.json'
 
-export default function ExamLockScreen({ meta, missing }) {
+export default function ExamLockScreen({ meta, missing = [], manualLock = false }) {
   const navigate = useNavigate()
   const missingTitles = missing.map((id) => weekMeta.find((w) => w.id === id)?.title || id)
 
@@ -15,15 +15,24 @@ export default function ExamLockScreen({ meta, missing }) {
           </svg>
         </div>
         <h2 style={{ margin: '0 0 10px' }}>{meta.title} is locked</h2>
-        <p className="text-dim">
-          Finish every lesson it covers first — click "Mark this lesson finished" at the bottom
-          of each one.
-        </p>
-        <ul className="missing-list">
-          {missingTitles.map((t) => (
-            <li key={t}>◻ {t}</li>
-          ))}
-        </ul>
+        {manualLock ? (
+          <p className="text-dim">
+            Your instructor has not opened this exam yet. Check back once it has been unlocked
+            for the class.
+          </p>
+        ) : (
+          <>
+            <p className="text-dim">
+              Finish every lesson it covers first — click "Mark this lesson finished" at the bottom
+              of each one.
+            </p>
+            <ul className="missing-list">
+              {missingTitles.map((t) => (
+                <li key={t}>◻ {t}</li>
+              ))}
+            </ul>
+          </>
+        )}
         <button className="btn btn-primary mt-24" onClick={() => navigate('/')}>
           Back to the log
         </button>

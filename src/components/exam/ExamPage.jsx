@@ -1,4 +1,5 @@
 import weekMeta from '../../data/weekMeta.json'
+import { EXAM_LOCKS } from '../../config/examLocks'
 import ExamLockScreen from './ExamLockScreen'
 import ExamEngine from './ExamEngine'
 import exam1 from '../../data/examBanks/exam1-questions.json'
@@ -13,6 +14,11 @@ const BANKS = {
 
 export default function ExamPage({ examId, progress }) {
   const meta = weekMeta.find((w) => w.id === examId)
+
+  if (EXAM_LOCKS[examId]) {
+    return <ExamLockScreen meta={meta} manualLock />
+  }
+
   const missing = progress.missingRequirements(meta.requires)
 
   if (missing.length > 0) {

@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import WeekIcon from '../shared/WeekIcon'
 import { weekTints } from '../../theme/colors'
+import { EXAM_LOCKS } from '../../config/examLocks'
 
 export default function RoadmapGrid({ weeks, isFinished, missingRequirements }) {
   const navigate = useNavigate()
@@ -9,8 +10,9 @@ export default function RoadmapGrid({ weeks, isFinished, missingRequirements }) 
     <div className="roadmap-grid">
       {weeks.map((w) => {
         const done = isFinished(w.id)
+        const manuallyLocked = w.type === 'exam' && !!EXAM_LOCKS[w.id]
         const missing = missingRequirements(w.requires)
-        const locked = missing.length > 0
+        const locked = manuallyLocked || missing.length > 0
 
         return (
           <button
@@ -31,7 +33,10 @@ export default function RoadmapGrid({ weeks, isFinished, missingRequirements }) 
               {w.type === 'exam' && <span className="badge badge-exam">Exam</span>}
               {w.needsApiKey && <span className="badge badge-api">API key</span>}
               {done && <span className="badge badge-done">Done</span>}
-              {locked && <span className="badge" title={`Finish: ${missing.join(', ')}`}>🔒 Locked</span>}
+              {manuallyLocked && <span className="badge" title="Locked by instructor">🔒 Locked</span>}
+              {!manuallyLocked && locked && (
+                <span className="badge" title={`Finish: ${missing.join(', ')}`}>🔒 Locked</span>
+              )}
             </div>
           </button>
         )
