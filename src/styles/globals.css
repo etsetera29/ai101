@@ -141,6 +141,10 @@ button { font-family: inherit; }
 .btn-danger:hover { background: var(--danger-soft); }
 .btn-sm { padding: 7px 12px; font-size: 0.8rem; }
 .btn-block { width: 100%; }
+.btn-link {
+  background: none; border: none; padding: 0; cursor: pointer;
+  color: var(--accent); font-size: inherit; font-weight: 600; text-decoration: underline;
+}
 
 /* ---------- Cards ---------- */
 .card {

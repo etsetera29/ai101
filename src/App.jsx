@@ -3,11 +3,13 @@ import { Routes, Route } from 'react-router-dom'
 
 import { useProgress } from './hooks/useProgress'
 import { useApiKey } from './hooks/useApiKey'
+import { useAuth } from './hooks/useAuth'
 
 import TopBar from './components/layout/TopBar'
 import Dashboard from './components/layout/Dashboard'
 import SettingsModal from './components/settings/SettingsModal'
 import ExamPage from './components/exam/ExamPage'
+import AuthGate from './components/auth/AuthGate'
 
 import Week01 from './weeks/week01-intro/Week01'
 import Week02 from './weeks/week02-branches/Week02'
@@ -29,14 +31,27 @@ import weekMeta from './data/weekMeta.json'
 const metaById = Object.fromEntries(weekMeta.map((w) => [w.id, w]))
 
 export default function App() {
-  const progress = useProgress()
+  const auth = useAuth()
+  const progress = useProgress(auth.user?.id)
   const apiKeyState = useApiKey()
   const [settingsOpen, setSettingsOpen] = useState(false)
   const openSettings = () => setSettingsOpen(true)
 
+  if (auth.configured && auth.loading) {
+    return <div className="page grain-bg" />
+  }
+
+  if (auth.configured && !auth.user) {
+    return (
+      <div className="page grain-bg">
+        <AuthGate auth={auth} />
+      </div>
+    )
+  }
+
   return (
     <div className="page grain-bg">
-      <TopBar onOpenSettings={openSettings} />
+      <TopBar onOpenSettings={openSettings} auth={auth} />
 
       <Routes>
         <Route path="/" element={<Dashboard progress={progress} />} />
