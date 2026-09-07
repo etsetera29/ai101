@@ -1,8 +1,16 @@
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
-export default function QuestionCard({ question, index, total, selected, onSelect }) {
+function blockCopy(e) {
+  e.preventDefault()
+}
+
+export default function QuestionCard({ question, index, total, selected, onSelect, secure = false }) {
+  const secureProps = secure
+    ? { onContextMenu: blockCopy, onCopy: blockCopy, onCut: blockCopy }
+    : {}
+
   return (
-    <div className="question-card">
+    <div className={`question-card${secure ? ' exam-secure' : ''}`} {...secureProps}>
       <span className="exam-question-num">Question {index + 1} of {total}</span>
       <p className="question-text">{question.question}</p>
       <div className="option-list">

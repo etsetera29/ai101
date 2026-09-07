@@ -1,4 +1,4 @@
-export default function ExamResults({ questions, answers, onRetry, onFinishExam, alreadyPassed }) {
+export default function ExamResults({ questions, answers, onRetry, onFinishExam, alreadyPassed, skipped }) {
   const total = questions.length
   const correctCount = questions.reduce(
     (acc, q, i) => acc + (answers[i] === q.correctIndex ? 1 : 0),
@@ -18,9 +18,13 @@ export default function ExamResults({ questions, answers, onRetry, onFinishExam,
       <div className="mt-24">
         {questions.map((q, i) => {
           const correct = answers[i] === q.correctIndex
+          const wasSkipped = skipped?.has(i)
           return (
             <div className="result-row" key={q.id}>
-              <span className="text-dim">Q{i + 1}. {q.question.slice(0, 60)}{q.question.length > 60 ? '…' : ''}</span>
+              <span className="text-dim">
+                Q{i + 1}. {q.question.slice(0, 60)}{q.question.length > 60 ? '…' : ''}
+                {wasSkipped && <span style={{ color: 'var(--danger)' }}> (auto-skipped)</span>}
+              </span>
               <span style={{ color: correct ? 'var(--success)' : 'var(--danger)' }}>
                 {correct ? '✓' : `✗ (${q.options[q.correctIndex]})`}
               </span>

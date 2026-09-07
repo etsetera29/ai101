@@ -519,12 +519,18 @@ button { font-family: inherit; }
 }
 .exam-dot.answered { background: var(--accent); }
 .exam-dot.current { background: var(--text); box-shadow: 0 0 0 3px var(--accent-soft); }
+.exam-dot.skipped { background: var(--danger); }
 
 .exam-question-num {
   font-family: var(--font-mono); color: var(--text-faint); font-size: 0.85rem;
 }
 
 .question-card { max-width: 640px; margin: 40px auto; padding: 0 20px; }
+.question-card.exam-secure {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
 .question-text {
   font-family: var(--font-display); font-size: 1.35rem; line-height: 1.4; margin: 10px 0 28px;
 }
