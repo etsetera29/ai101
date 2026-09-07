@@ -66,7 +66,7 @@ export default function AuthGate({ auth }) {
         return
       }
 
-      const { error: err } = await auth.signUp(email.trim(), password, {
+      const { error: err, session } = await auth.signUp(email.trim(), password, {
         firstName: firstName.trim(),
         lastName: lastName.trim(),
         middleInitial: middleInitial.trim(),
@@ -76,6 +76,11 @@ export default function AuthGate({ auth }) {
       setBusy(false)
       if (err) {
         setError(err.message)
+      } else if (session) {
+        // Email confirmation is off in Supabase — they're already logged
+        // in. The auth listener picks this up and swaps this screen out,
+        // so there's nothing else to do here.
+        setInfo('Account created! Logging you in…')
       } else {
         setInfo('Account created! Check your email to confirm, then log in.')
         setMode('login')

@@ -29,7 +29,7 @@ export function useAuth() {
   const signUp = useCallback(
     async (email, password, { firstName, lastName, middleInitial, section, agreedToTerms }) => {
       const fullName = buildFullName(firstName, lastName, middleInitial)
-      const { error } = await supabase.auth.signUp({
+      const { data, error } = await supabase.auth.signUp({
         email,
         password,
         options: {
@@ -43,7 +43,10 @@ export function useAuth() {
           },
         },
       })
-      return { error }
+      // If email confirmation is turned off in Supabase, signUp already
+      // returns a live session — the person is logged in immediately and
+      // there's no "check your email" step to show.
+      return { error, session: data?.session ?? null }
     },
     []
   )
