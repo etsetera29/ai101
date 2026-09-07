@@ -12,7 +12,7 @@
  * without deploying will not affect anyone else.
  */
 export const EXAM_LOCKS = {
-  exam1: true,
+  exam1: false,
   exam2: true,
-  exam3: false,
+  exam3: true,
 }
