@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 
-export default function TopBar({ onOpenSettings, auth }) {
+export default function TopBar({ onOpenSettings, onOpenProfile, auth }) {
   const navigate = useNavigate()
+  const fullName = auth?.user?.user_metadata?.full_name || auth?.user?.email
+
   return (
     <div className="topbar">
       <div className="topbar-inner">
@@ -11,9 +13,9 @@ export default function TopBar({ onOpenSettings, auth }) {
         </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           {auth?.user && (
-            <span className="text-faint small font-mono" style={{ marginRight: 4 }}>
-              {auth.user.email}
-            </span>
+            <button className="icon-btn" onClick={onOpenProfile}>
+              👤 {fullName}
+            </button>
           )}
           <button className="icon-btn" onClick={onOpenSettings}>⚙ Settings</button>
           {auth?.user && (

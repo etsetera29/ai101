@@ -4,12 +4,14 @@ import { Routes, Route } from 'react-router-dom'
 import { useProgress } from './hooks/useProgress'
 import { useApiKey } from './hooks/useApiKey'
 import { useAuth } from './hooks/useAuth'
+import { useAdminKey } from './hooks/useAdminKey'
 
 import TopBar from './components/layout/TopBar'
 import Dashboard from './components/layout/Dashboard'
 import SettingsModal from './components/settings/SettingsModal'
 import ExamPage from './components/exam/ExamPage'
 import AuthGate from './components/auth/AuthGate'
+import ProfilePage from './components/profile/ProfilePage'
 
 import Week01 from './weeks/week01-intro/Week01'
 import Week02 from './weeks/week02-branches/Week02'
@@ -34,8 +36,11 @@ export default function App() {
   const auth = useAuth()
   const progress = useProgress(auth.user?.id)
   const apiKeyState = useApiKey()
+  const adminKeyState = useAdminKey()
   const [settingsOpen, setSettingsOpen] = useState(false)
+  const [profileOpen, setProfileOpen] = useState(false)
   const openSettings = () => setSettingsOpen(true)
+  const openProfile = () => setProfileOpen(true)
 
   if (auth.configured && auth.loading) {
     return <div className="page grain-bg" />
@@ -51,7 +56,7 @@ export default function App() {
 
   return (
     <div className="page grain-bg">
-      <TopBar onOpenSettings={openSettings} auth={auth} />
+      <TopBar onOpenSettings={openSettings} onOpenProfile={openProfile} auth={auth} />
 
       <Routes>
         <Route path="/" element={<Dashboard progress={progress} />} />
@@ -86,7 +91,16 @@ export default function App() {
         open={settingsOpen}
         onClose={() => setSettingsOpen(false)}
         apiKeyState={apiKeyState}
+        adminKeyState={adminKeyState}
         progress={progress}
+      />
+
+      <ProfilePage
+        open={profileOpen}
+        onClose={() => setProfileOpen(false)}
+        auth={auth}
+        progress={progress}
+        adminKeyState={adminKeyState}
       />
     </div>
   )

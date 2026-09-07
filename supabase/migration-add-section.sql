@@ -17,7 +17,8 @@ end;
 $$;
 
 -- Recreate the instructor view so it includes section.
-create or replace view instructor_scores as
+drop view if exists instructor_scores;
+create view instructor_scores as
 select
   p.full_name,
   p.section,
