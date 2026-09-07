@@ -4,8 +4,13 @@
 -- ---------- profiles (one row per student) ----------
 create table if not exists profiles (
   id uuid references auth.users on delete cascade primary key,
+  first_name text,
+  last_name text,
+  middle_initial text,
   full_name text,
   section text,
+  terms_accepted boolean not null default false,
+  terms_accepted_at timestamptz,
   created_at timestamptz default now()
 );
 
@@ -23,15 +28,35 @@ drop policy if exists "profiles: insert own" on profiles;
 create policy "profiles: insert own" on profiles
   for insert with check (auth.uid() = id);
 
--- Auto-create a profile row whenever someone signs up.
+-- Auto-create a profile row whenever someone signs up. Builds full_name as
+-- "Last, First M.I." from the split signup fields and records whether the
+-- Terms & Conditions checkbox was accepted.
 create or replace function public.handle_new_user()
 returns trigger
 language plpgsql
 security definer set search_path = public
 as $$
+declare
+  v_first text := new.raw_user_meta_data ->> 'first_name';
+  v_last text := new.raw_user_meta_data ->> 'last_name';
+  v_mi text := new.raw_user_meta_data ->> 'middle_initial';
+  v_full text := coalesce(
+    new.raw_user_meta_data ->> 'full_name',
+    trim(both ', ' from
+      coalesce(v_last, '') || ', ' || trim(coalesce(v_first, '') || ' ' ||
+        case when v_mi is not null and v_mi <> '' then upper(left(v_mi, 1)) || '.' else '' end)
+    )
+  );
+  v_terms boolean := coalesce((new.raw_user_meta_data ->> 'terms_accepted')::boolean, false);
 begin
-  insert into public.profiles (id, full_name, section)
-  values (new.id, new.raw_user_meta_data ->> 'full_name', new.raw_user_meta_data ->> 'section');
+  insert into public.profiles (
+    id, first_name, last_name, middle_initial, full_name, section,
+    terms_accepted, terms_accepted_at
+  )
+  values (
+    new.id, v_first, v_last, v_mi, v_full, new.raw_user_meta_data ->> 'section',
+    v_terms, case when v_terms then now() else null end
+  );
   return new;
 end;
 $$;
@@ -91,9 +116,13 @@ create policy "exam_attempts: insert own" on exam_attempts
 --   select * from instructor_scores order by full_name, exam_id, created_at;
 create or replace view instructor_scores as
 select
+  p.last_name,
+  p.first_name,
+  p.middle_initial,
   p.full_name,
   p.section,
   u.email,
+  p.terms_accepted,
   e.exam_id,
   e.score,
   e.total,

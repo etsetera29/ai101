@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { supabase, supabaseConfigured } from '../lib/supabaseClient'
+import { buildFullName } from '../lib/formatName'
 
 /**
  * Wraps Supabase Auth. `user` is null while logged out, an object once
@@ -25,14 +26,27 @@ export function useAuth() {
     return () => listener.subscription.unsubscribe()
   }, [])
 
-  const signUp = useCallback(async (email, password, fullName, section) => {
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { data: { full_name: fullName, section } },
-    })
-    return { error }
-  }, [])
+  const signUp = useCallback(
+    async (email, password, { firstName, lastName, middleInitial, section, agreedToTerms }) => {
+      const fullName = buildFullName(firstName, lastName, middleInitial)
+      const { error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: {
+            first_name: firstName,
+            last_name: lastName,
+            middle_initial: middleInitial || null,
+            full_name: fullName,
+            section,
+            terms_accepted: !!agreedToTerms,
+          },
+        },
+      })
+      return { error }
+    },
+    []
+  )
 
   const signIn = useCallback(async (email, password) => {
     const { error } = await supabase.auth.signInWithPassword({ email, password })

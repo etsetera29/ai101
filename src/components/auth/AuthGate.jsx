@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { isPasswordValid } from '../../lib/formatName'
 
 const SECTIONS = [
   'BSIT-1A-NE',
@@ -14,12 +15,20 @@ export default function AuthGate({ auth }) {
   const [mode, setMode] = useState('login') // 'login' | 'register'
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [fullName, setFullName] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [middleInitial, setMiddleInitial] = useState('')
   const [section, setSection] = useState('')
+  const [agreedToTerms, setAgreedToTerms] = useState(false)
   const [error, setError] = useState('')
   const [info, setInfo] = useState('')
   const [busy, setBusy] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
+  const [passwordTouched, setPasswordTouched] = useState(false)
+  const [showTerms, setShowTerms] = useState(false)
+
+  const passwordOk = isPasswordValid(password)
+  const canSubmitRegister = passwordOk && agreedToTerms
 
   if (!auth.configured) {
     return (
@@ -43,7 +52,24 @@ export default function AuthGate({ auth }) {
     setBusy(true)
 
     if (mode === 'register') {
-      const { error: err } = await auth.signUp(email.trim(), password, fullName.trim(), section)
+      if (!isPasswordValid(password)) {
+        setBusy(false)
+        setError('Password must be at least 8 characters and include an uppercase letter, a lowercase letter, and a number.')
+        return
+      }
+      if (!agreedToTerms) {
+        setBusy(false)
+        setError('Please review and agree to the Terms & Conditions to create an account.')
+        return
+      }
+
+      const { error: err } = await auth.signUp(email.trim(), password, {
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        middleInitial: middleInitial.trim(),
+        section,
+        agreedToTerms,
+      })
       setBusy(false)
       if (err) {
         setError(err.message)
@@ -60,6 +86,7 @@ export default function AuthGate({ auth }) {
   }
 
   return (
+    <>
     <div className="container" style={{ paddingTop: 64, paddingBottom: 64 }}>
       <div className="card" style={{ maxWidth: 420, margin: '0 auto' }}>
         <span className="eyebrow" style={{ color: 'var(--accent)' }}>AI 101 · Field Log</span>
@@ -73,16 +100,40 @@ export default function AuthGate({ auth }) {
         <form onSubmit={handleSubmit}>
           {mode === 'register' && (
             <>
-              <div className="field">
-                <label htmlFor="fullName">Full name</label>
-                <input
-                  id="fullName"
-                  type="text"
-                  value={fullName}
-                  onChange={(e) => setFullName(e.target.value)}
-                  required
-                  autoComplete="name"
-                />
+              <div className="field-row">
+                <div className="field">
+                  <label htmlFor="lastName">Last name</label>
+                  <input
+                    id="lastName"
+                    type="text"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    required
+                    autoComplete="family-name"
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="firstName">First name</label>
+                  <input
+                    id="firstName"
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    required
+                    autoComplete="given-name"
+                  />
+                </div>
+                <div className="field field-narrow">
+                  <label htmlFor="middleInitial">M.I.</label>
+                  <input
+                    id="middleInitial"
+                    type="text"
+                    value={middleInitial}
+                    onChange={(e) => setMiddleInitial(e.target.value.slice(0, 1))}
+                    maxLength={1}
+                    autoComplete="additional-name"
+                  />
+                </div>
               </div>
 
               <div className="field">
@@ -122,8 +173,9 @@ export default function AuthGate({ auth }) {
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                onBlur={() => setPasswordTouched(true)}
                 required
-                minLength={6}
+                minLength={8}
                 autoComplete={mode === 'login' ? 'current-password' : 'new-password'}
                 style={{ paddingRight: 40 }}
               />
@@ -147,7 +199,39 @@ export default function AuthGate({ auth }) {
                 {showPassword ? '🙈' : '👁'}
               </button>
             </div>
+            {mode === 'register' && (
+              <p className={`field-hint${passwordTouched && !passwordOk ? ' is-invalid' : ''}${passwordOk ? ' is-valid' : ''}`}>
+                At least 8 characters, with an uppercase letter, a lowercase letter, and a number.
+              </p>
+            )}
           </div>
+
+          {mode === 'register' && (
+            <div className="field">
+              <label>Terms &amp; Conditions</label>
+              <p className="text-faint" style={{ fontSize: '0.82rem', margin: '4px 0 10px' }}>
+                Please{' '}
+                <button
+                  type="button"
+                  className="btn-link"
+                  onClick={() => setShowTerms(true)}
+                  style={{ fontSize: 'inherit' }}
+                >
+                  read the Terms &amp; Conditions
+                </button>{' '}
+                before signing up.
+              </p>
+              <label className="terms-checkbox">
+                <input
+                  type="checkbox"
+                  checked={agreedToTerms}
+                  onChange={(e) => setAgreedToTerms(e.target.checked)}
+                  required
+                />
+                <span>I have read and agree to the Terms &amp; Conditions.</span>
+              </label>
+            </div>
+          )}
 
           {error && (
             <p style={{ color: 'var(--danger)', fontSize: '0.85rem', marginTop: -6 }}>{error}</p>
@@ -156,7 +240,11 @@ export default function AuthGate({ auth }) {
             <p style={{ color: 'var(--success)', fontSize: '0.85rem', marginTop: -6 }}>{info}</p>
           )}
 
-          <button type="submit" className="btn btn-primary btn-block" disabled={busy}>
+          <button
+            type="submit"
+            className="btn btn-primary btn-block"
+            disabled={busy || (mode === 'register' && !canSubmitRegister)}
+          >
             {busy ? 'Please wait…' : mode === 'login' ? 'Log in' : 'Sign up'}
           </button>
         </form>
@@ -180,5 +268,50 @@ export default function AuthGate({ auth }) {
         </p>
       </div>
     </div>
+
+    {showTerms && (
+      <div className="modal-overlay" onClick={() => setShowTerms(false)}>
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-head">
+            <h3 style={{ margin: 0 }}>Terms &amp; Conditions</h3>
+            <button
+              className="modal-close"
+              onClick={() => setShowTerms(false)}
+              aria-label="Close terms and conditions"
+            >
+              ✕
+            </button>
+          </div>
+
+          <div style={{ fontSize: '0.88rem', lineHeight: 1.6, color: 'var(--text-dim)' }}>
+            <p>
+              By creating an account, you agree that AI 101 · Field Log may collect and store your
+              name, email address, section, and quiz/exam scores, and may use this information to:
+            </p>
+            <ul style={{ paddingLeft: 18 }}>
+              <li>generate and export grading sheets for your instructor;</li>
+              <li>send you confirmation and account-related emails; and</li>
+              <li>record and report your scores for course and school purposes.</li>
+            </ul>
+            <p style={{ marginBottom: 0 }}>
+              Your information is used only for these academic purposes and is not shared outside
+              of this course.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            className="btn btn-primary btn-block mt-24"
+            onClick={() => {
+              setAgreedToTerms(true)
+              setShowTerms(false)
+            }}
+          >
+            I agree
+          </button>
+        </div>
+      </div>
+    )}
+    </>
   )
 }
