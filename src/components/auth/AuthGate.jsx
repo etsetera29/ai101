@@ -1,10 +1,21 @@
 import { useState } from 'react'
 
+const SECTIONS = [
+  'BSIT-1A-NE',
+  'BSIT-1B-NE',
+  'BSIT-1C-NE',
+  'BSIT-1D-NE',
+  'BSIT-1E-NE',
+  'BSIT-1A-SE',
+  'BSCS-1A',
+]
+
 export default function AuthGate({ auth }) {
   const [mode, setMode] = useState('login') // 'login' | 'register'
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [fullName, setFullName] = useState('')
+  const [section, setSection] = useState('')
   const [error, setError] = useState('')
   const [info, setInfo] = useState('')
   const [busy, setBusy] = useState(false)
@@ -31,7 +42,7 @@ export default function AuthGate({ auth }) {
     setBusy(true)
 
     if (mode === 'register') {
-      const { error: err } = await auth.signUp(email.trim(), password, fullName.trim())
+      const { error: err } = await auth.signUp(email.trim(), password, fullName.trim(), section)
       setBusy(false)
       if (err) {
         setError(err.message)
@@ -60,17 +71,34 @@ export default function AuthGate({ auth }) {
 
         <form onSubmit={handleSubmit}>
           {mode === 'register' && (
-            <div className="field">
-              <label htmlFor="fullName">Full name</label>
-              <input
-                id="fullName"
-                type="text"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                required
-                autoComplete="name"
-              />
-            </div>
+            <>
+              <div className="field">
+                <label htmlFor="fullName">Full name</label>
+                <input
+                  id="fullName"
+                  type="text"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  required
+                  autoComplete="name"
+                />
+              </div>
+
+              <div className="field">
+                <label htmlFor="section">Course &amp; section</label>
+                <select
+                  id="section"
+                  value={section}
+                  onChange={(e) => setSection(e.target.value)}
+                  required
+                >
+                  <option value="" disabled>Select your section…</option>
+                  {SECTIONS.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+            </>
           )}
 
           <div className="field">

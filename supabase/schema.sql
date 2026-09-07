@@ -5,6 +5,7 @@
 create table if not exists profiles (
   id uuid references auth.users on delete cascade primary key,
   full_name text,
+  section text,
   created_at timestamptz default now()
 );
 
@@ -29,8 +30,8 @@ language plpgsql
 security definer set search_path = public
 as $$
 begin
-  insert into public.profiles (id, full_name)
-  values (new.id, new.raw_user_meta_data ->> 'full_name');
+  insert into public.profiles (id, full_name, section)
+  values (new.id, new.raw_user_meta_data ->> 'full_name', new.raw_user_meta_data ->> 'section');
   return new;
 end;
 $$;
@@ -91,6 +92,7 @@ create policy "exam_attempts: insert own" on exam_attempts
 create or replace view instructor_scores as
 select
   p.full_name,
+  p.section,
   u.email,
   e.exam_id,
   e.score,
