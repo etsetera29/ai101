@@ -53,6 +53,11 @@ export function useAuth() {
     return { error }
   }, [])
 
+  const resendConfirmation = useCallback(async (email) => {
+    const { error } = await supabase.auth.resend({ type: 'signup', email })
+    return { error }
+  }, [])
+
   const signOut = useCallback(async () => {
     await supabase.auth.signOut()
   }, [])
@@ -65,5 +70,6 @@ export function useAuth() {
     signUp,
     signIn,
     signOut,
+    resendConfirmation,
   }
 }

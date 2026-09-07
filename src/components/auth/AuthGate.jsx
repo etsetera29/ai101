@@ -26,6 +26,8 @@ export default function AuthGate({ auth }) {
   const [showPassword, setShowPassword] = useState(false)
   const [passwordTouched, setPasswordTouched] = useState(false)
   const [showTerms, setShowTerms] = useState(false)
+  const [unconfirmedEmail, setUnconfirmedEmail] = useState('')
+  const [resendBusy, setResendBusy] = useState(false)
 
   const passwordOk = isPasswordValid(password)
   const canSubmitRegister = passwordOk && agreedToTerms
@@ -49,6 +51,7 @@ export default function AuthGate({ auth }) {
     e.preventDefault()
     setError('')
     setInfo('')
+    setUnconfirmedEmail('')
     setBusy(true)
 
     if (mode === 'register') {
@@ -82,7 +85,29 @@ export default function AuthGate({ auth }) {
 
     const { error: err } = await auth.signIn(email.trim(), password)
     setBusy(false)
-    if (err) setError(err.message)
+    if (err) {
+      const isUnconfirmed =
+        err.code === 'email_not_confirmed' || /email.*not.*confirm/i.test(err.message || '')
+      if (isUnconfirmed) {
+        setUnconfirmedEmail(email.trim())
+        setError('Your email address isn\u2019t confirmed yet. Check your inbox for the confirmation link before logging in.')
+      } else {
+        setError(err.message)
+      }
+    }
+  }
+
+  async function handleResendConfirmation() {
+    setError('')
+    setInfo('')
+    setResendBusy(true)
+    const { error: err } = await auth.resendConfirmation(unconfirmedEmail)
+    setResendBusy(false)
+    if (err) {
+      setError(err.message)
+    } else {
+      setInfo('Confirmation email resent. Check your inbox (and spam folder).')
+    }
   }
 
   return (
@@ -236,6 +261,17 @@ export default function AuthGate({ auth }) {
           {error && (
             <p style={{ color: 'var(--danger)', fontSize: '0.85rem', marginTop: -6 }}>{error}</p>
           )}
+          {unconfirmedEmail && (
+            <button
+              type="button"
+              className="btn-link"
+              onClick={handleResendConfirmation}
+              disabled={resendBusy}
+              style={{ fontSize: '0.85rem', marginTop: -10, marginBottom: 4, display: 'block' }}
+            >
+              {resendBusy ? 'Resending…' : 'Resend confirmation email'}
+            </button>
+          )}
           {info && (
             <p style={{ color: 'var(--success)', fontSize: '0.85rem', marginTop: -6 }}>{info}</p>
           )}
@@ -253,14 +289,14 @@ export default function AuthGate({ auth }) {
           {mode === 'login' ? (
             <>
               No account yet?{' '}
-              <button className="btn-link" onClick={() => { setMode('register'); setError(''); setInfo('') }}>
+              <button className="btn-link" onClick={() => { setMode('register'); setError(''); setInfo(''); setUnconfirmedEmail('') }}>
                 Sign up
               </button>
             </>
           ) : (
             <>
               Already have an account?{' '}
-              <button className="btn-link" onClick={() => { setMode('login'); setError(''); setInfo('') }}>
+              <button className="btn-link" onClick={() => { setMode('login'); setError(''); setInfo(''); setUnconfirmedEmail('') }}>
                 Log in
               </button>
             </>
