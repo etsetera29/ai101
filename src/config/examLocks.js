@@ -14,5 +14,5 @@
 export const EXAM_LOCKS = {
   exam1: true,
   exam2: true,
-  exam3: true,
+  exam3: false,
 }
