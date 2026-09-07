@@ -80,18 +80,45 @@ export function useProgress(userId) {
 
   const recordExamAttempt = useCallback(
     async (examId, result) => {
+      // Keep every attempt in local state for this session so the results
+      // screen and profile page can still show "best of" correctly.
       setExamAttempts((prev) => ({
         ...prev,
         [examId]: [...(prev[examId] || []), result],
       }))
       if (!userId) return
-      const { error } = await supabase.from('exam_attempts').insert({
-        user_id: userId,
-        exam_id: examId,
-        score: result.score,
-        total: result.total,
-        passed: result.passed,
-      })
+
+      // Only one row per (user, exam) is kept in the database — it's a
+      // "personal best" record, not a full attempt log. A retry only
+      // overwrites it when the new score is strictly higher, so a worse
+      // retry never erases a better earlier score, and the table doesn't
+      // grow with every attempt.
+      // NOTE: this relies on a unique constraint on (user_id, exam_id) in
+      // the exam_attempts table for the upsert's onConflict to work.
+      const { data: existing, error: fetchError } = await supabase
+        .from('exam_attempts')
+        .select('score')
+        .eq('user_id', userId)
+        .eq('exam_id', examId)
+        .maybeSingle()
+
+      if (fetchError) {
+        console.error('Failed to check existing exam attempt:', fetchError.message)
+        return
+      }
+
+      if (existing && existing.score >= result.score) return
+
+      const { error } = await supabase.from('exam_attempts').upsert(
+        {
+          user_id: userId,
+          exam_id: examId,
+          score: result.score,
+          total: result.total,
+          passed: result.passed,
+        },
+        { onConflict: 'user_id,exam_id' }
+      )
       if (error) console.error('Failed to save exam attempt:', error.message)
     },
     [userId]

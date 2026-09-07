@@ -39,10 +39,11 @@ export default function ExamStartGate({ meta, totalQuestions, onStart }) {
         <h2 style={{ margin: '0 0 10px' }}>{meta.title} — before you start</h2>
         <p className="text-dim">This exam runs in fullscreen with a few academic-integrity checks:</p>
         <ul className="missing-list" style={{ textAlign: 'left' }}>
-          <li>Runs in fullscreen — exiting fullscreen skips your current question, marked wrong.</li>
+          <li>Runs in fullscreen — exiting fullscreen at any point voids the entire attempt. You'll have to start over.</li>
           <li>Switching tabs or windows instantly skips your current question, marked wrong.</li>
           <li>30 seconds of inactivity shows one warning; a second time on the same question skips it.</li>
           <li>There's no "Previous" button — once you move on, that question is locked in.</li>
+          <li>Retaking the exam only helps — your highest score is the one that's kept.</li>
           <li>{totalQuestions} questions total. Good luck!</li>
         </ul>
         {error && (

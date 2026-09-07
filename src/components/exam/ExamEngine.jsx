@@ -18,7 +18,7 @@ function exitFullscreen() {
 export default function ExamEngine({ meta, bank, progress }) {
   const navigate = useNavigate()
   const { questions, regenerate, totalQuestions } = useShuffledExam(bank)
-  const [phase, setPhase] = useState('gate') // 'gate' | 'active' | 'submitted'
+  const [phase, setPhase] = useState('gate') // 'gate' | 'active' | 'voided' | 'submitted'
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState({})
   const [skipped, setSkipped] = useState(() => new Set())
@@ -42,6 +42,14 @@ export default function ExamEngine({ meta, bank, progress }) {
   function applyPenalty(reason) {
     if (phase !== 'active' || penalizedRef.current) return
     penalizedRef.current = true
+
+    // Exiting fullscreen is treated as a serious integrity violation:
+    // the whole attempt is voided rather than just skipping a question.
+    if (reason === 'fullscreen') {
+      exitFullscreen()
+      setPhase('voided')
+      return
+    }
 
     setSkipped((prev) => new Set(prev).add(currentIndex))
     setAnswers((prev) => {
@@ -99,6 +107,33 @@ export default function ExamEngine({ meta, bank, progress }) {
 
   if (phase === 'gate') {
     return <ExamStartGate meta={meta} totalQuestions={totalQuestions} onStart={startExam} />
+  }
+
+  if (phase === 'voided') {
+    return (
+      <div className="container">
+        <div className="lock-screen">
+          <div className="lock-icon" style={{ color: 'var(--danger)', borderColor: 'var(--danger)' }}>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+              <path d="M12 2 2 20h20L12 2Z" strokeLinejoin="round" />
+              <path d="M12 9v5M12 17h.01" strokeLinecap="round" />
+            </svg>
+          </div>
+          <h2 style={{ margin: '0 0 10px' }}>Exam voided</h2>
+          <p className="text-dim">
+            You exited fullscreen during a live attempt. That's flagged as a security violation,
+            so this entire attempt has been discarded — none of your answers were saved or scored.
+          </p>
+          <p className="text-dim">
+            Start a new attempt when you're ready, and stay in fullscreen for the whole exam this time.
+          </p>
+          <div className="flex gap-12 mt-24" style={{ justifyContent: 'center' }}>
+            <button className="btn btn-ghost" onClick={() => navigate('/')}>Back to the log</button>
+            <button className="btn btn-primary" onClick={retry}>Retry exam</button>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   if (phase === 'submitted') {

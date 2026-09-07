@@ -88,7 +88,10 @@ drop policy if exists "progress: delete own" on progress;
 create policy "progress: delete own" on progress
   for delete using (auth.uid() = user_id);
 
--- ---------- exam_attempts (every submitted attempt, kept for history) ----------
+-- ---------- exam_attempts (one row per user/exam — personal best only) ----------
+-- The app only ever writes the highest score seen for a given exam, via
+-- upsert(onConflict: 'user_id,exam_id'). See migration-exam-attempts-best-score.sql
+-- for the constraint/policy this depends on if you're migrating an existing DB.
 create table if not exists exam_attempts (
   id bigint generated always as identity primary key,
   user_id uuid references auth.users on delete cascade not null,
@@ -96,7 +99,8 @@ create table if not exists exam_attempts (
   score int not null,
   total int not null,
   passed boolean not null,
-  created_at timestamptz default now()
+  created_at timestamptz default now(),
+  unique (user_id, exam_id)
 );
 
 alter table exam_attempts enable row level security;
@@ -108,6 +112,11 @@ create policy "exam_attempts: select own" on exam_attempts
 drop policy if exists "exam_attempts: insert own" on exam_attempts;
 create policy "exam_attempts: insert own" on exam_attempts
   for insert with check (auth.uid() = user_id);
+
+drop policy if exists "exam_attempts: update own" on exam_attempts;
+create policy "exam_attempts: update own" on exam_attempts
+  for update using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
 
 -- ---------- instructor view ----------
 -- Handy read-only view for you (the instructor) to check in the Supabase
