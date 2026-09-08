@@ -1,0 +1,42 @@
+name: Convert lesson slides
+
+# Runs entirely on GitHub's servers — nothing to install on your own machine.
+# Add/replace a .pptx in slides-source/ (even via the GitHub web UI or mobile
+# app) and push/commit — this workflow converts it to PNGs and commits the
+# result back, which then triggers your normal Vercel deploy.
+
+on:
+  push:
+    paths:
+      - 'slides-source/**/*.pptx'
+  workflow_dispatch: {} # lets you re-run manually from the Actions tab if needed
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # so the auto-commit step below can push back to the branch
+          fetch-depth: 0
+
+      - name: Install LibreOffice + poppler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libreoffice-impress poppler-utils
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Convert slides
+        run: node scripts/convert-slides.js
+
+      - name: Commit generated slide images
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: auto-convert lesson slides [skip ci]'
+          file_pattern: 'public/slides/**'
