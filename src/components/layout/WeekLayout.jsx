@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import weekMeta from '../../data/weekMeta.json'
 import FinishedLessonButton from '../shared/FinishedLessonButton'
+import SlideViewer from '../shared/SlideViewer'
 
 export default function WeekLayout({ meta, progress, children, showReflection = true }) {
   const navigate = useNavigate()
@@ -22,6 +23,8 @@ export default function WeekLayout({ meta, progress, children, showReflection = 
 
       <h1 className="week-title">{meta.title}</h1>
       {meta.guidingQuestion && <p className="week-question">{meta.guidingQuestion}</p>}
+
+      <SlideViewer weekId={meta.id} />
 
       <div className="simulation-block">{children}</div>
 

@@ -1,0 +1,12 @@
+{
+  "weekId": "week01",
+  "sourceFile": "ppt1.pptx",
+  "count": 4,
+  "files": [
+    "slide-01.png",
+    "slide-02.png",
+    "slide-03.png",
+    "slide-04.png"
+  ],
+  "generatedAt": "2026-09-08T02:43:28.934Z"
+}
