@@ -1,7 +1,7 @@
 {
-  "weekId": "week01",
-  "sourceFile": "ppt1.pptx",
-  "count": 21,
+  "weekId": "week08",
+  "sourceFile": "ppt7.pptx",
+  "count": 17,
   "files": [
     "slide-01.png",
     "slide-02.png",
@@ -19,11 +19,7 @@
     "slide-14.png",
     "slide-15.png",
     "slide-16.png",
-    "slide-17.png",
-    "slide-18.png",
-    "slide-19.png",
-    "slide-20.png",
-    "slide-21.png"
+    "slide-17.png"
   ],
-  "generatedAt": "2026-09-13T05:56:51.022Z"
+  "generatedAt": "2026-09-13T05:57:38.686Z"
 }
